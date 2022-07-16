@@ -1,38 +1,32 @@
-import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const Navigationbar = () => {
   return (
-    <Navbar className="navbar navbar-expand-lg navbar-light fixed-top" bg="light" expand="lg">
-      <Container className="container-fluid">
-        <Navbar.Brand className="h1 ms-4" id="nav-upperleft">Anything is possible with action, consistency and perseverance.</Navbar.Brand>
-
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
- 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="navbar-nav ms-auto">
-            <Nav.Link className="nav-link" aria-current="page" href="#home">Home</Nav.Link>
-            <Nav.Link className="nav-link" href="#about-me">About Me</Nav.Link>
-            <Nav.Link className="nav-link" href="#gallery">Gallery</Nav.Link>
-            <Nav.Link className="nav-link" href="#contact">Contact</Nav.Link>
-            <li className="nav-item dropdown">
-              <NavDropdown className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" 
-              aria-expanded="false" title="🇺🇸" id="navbarDropdown basic-nav-dropdown">🇺🇸</NavDropdown>
-              <ul className="dropdown-menu dropdown-menu-dark dropdown-menu-end dropdown-menu-xl-start" aria-labelledby="navbarDropdown">
-                <NavDropdown.Item><Nav.Link className="dropdown-item" href="/de.html">🇩🇪 Deutsch</Nav.Link></NavDropdown.Item>
-                <NavDropdown.Item><Nav.Link className="dropdown-item" href="/fr.html">🇫🇷 Français</Nav.Link></NavDropdown.Item>
-                <NavDropdown.Item><Nav.Link className="dropdown-item" href="/sc.html">🇨🇳 简体中文</Nav.Link></NavDropdown.Item>
-                <NavDropdown.Item><Nav.Link className="dropdown-item" href="/tc.html">🇭🇰 繁體中文</Nav.Link></NavDropdown.Item> 
-              </ul>
-            </li>
-          </div>
-        </div>
-      </Container>
-    </Navbar>
+    <>
+    <div className="hero-image"></div>
+    <h1 className="hero-text hero-text-name"><span>Jasmine Zi Xin ZENG</span></h1>
+    <Nav.Link href="#about-me" className="hero-text menu-1">
+      <span>About me</span>
+    </Nav.Link>
+    <Nav.Link href="https://deinelieblingsjasmin.com" target="_blank" className="hero-text menu-2">
+      <span>My blogs</span>
+    </Nav.Link>
+    <Nav.Link href="#contact" className="hero-text menu-3">
+      <span>Contact</span>
+    </Nav.Link>
+    <Nav.Link href="#" className="hero-text menu-4 lang-letter">
+      <span>🇩🇪 Deutsch</span>
+    </Nav.Link>
+    <Nav.Link href="#" className="hero-text menu-5 lang-letter">
+      <span>🇫🇷 Français</span>
+    </Nav.Link>
+    <Nav.Link href="#" className="hero-text menu-6 lang-chinese">
+      <span>🇨🇳 简体中文</span>
+    </Nav.Link>
+    <Nav.Link href="#" className="hero-text menu-7 lang-chinese">
+      <span>🇭🇰 繁體中文</span>
+    </Nav.Link>
+    </>
   )
 }
 

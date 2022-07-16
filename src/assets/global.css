@@ -1,0 +1,154 @@
+/* ---------- Google Fonts ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
+/* ---------- General ---------- */
+html {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+h1 {
+  font-family: 'Satisfy', 'cursive' !important;
+  font-size: 5.5vw !important;
+  text-align: center;
+}
+/* h2 {
+  color: honeydew;
+  font-family: 'Kaushan Script', 'cursive';
+  font-size: 5vw;
+  text-align: center;
+  clear: both;
+}
+h3 { 
+  color: ivory;
+  font-family: 'Satisfy', 'cursive';
+  font-size: 2.7vw;
+  text-align: center;
+}  */
+p, footer {
+  font-family: 'Georgia', sans-serif;
+  font-size: 1.7vw;
+  text-align: justify;
+  padding: 5vh 1vw 0;
+  margin: 0;
+}
+a {
+  color: inherit !important;
+}
+/* ---------- Navbar & Jumbotron ---------- */
+.hero-image {
+  background-image: url('/src/assets/img/portrait-01.jpg');
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+.hero-text {
+  font-size: 4vw;
+  font-family: 'Caveat';
+  position: absolute;
+  text-align: center;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  width: 80%;
+  text-align: center;
+}
+.hero-text span:hover {
+  font-size: 5.5vw;
+  color: yellow !important;
+}
+.hero-text-name span {
+  color: #00FFFF;
+}
+.hero-text-name:hover span {
+  display: none
+}
+.hero-text-name:hover:after {
+  content: "Hello, welcome to my page !";
+  color: yellow;
+}
+.menu-1, .menu-2 {
+  top: 38%;
+  padding-right: 66vw !important;
+  width: 100%;
+}
+.menu-2 {
+  top: 58%;
+}
+.menu-3 {
+  top: 78%;
+  padding-right: 67vw !important;
+}
+.lang-letter {
+  font-size: 2.5vw;
+  font-weight: lighter;
+}
+.lang-letter span:hover {
+  font-size: 3.5vw;
+}
+.menu-4, .menu-5 {
+  top: 35%;
+  padding-left: 63vw !important;
+}
+.menu-5 {
+  top: 50%;
+}
+.lang-chinese {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 2vw;
+  font-weight: lighter;
+  top: 63%;
+  padding-left: 64vw !important;
+}
+.lang-chinese span:hover {
+  font-size: 2.5vw;
+}
+.menu-7 {
+  top: 75%;
+}
+/* ---------- About me ---------- */
+.about-me {
+  background-image: url('/src/assets/img/portrait-01.jpg');
+  height: 115vh;
+  width: 100%;
+  background-blend-mode: multiply;
+  background-color: rgba(0,0,0,0.4);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+.about-me-p {
+  padding: 13vh 13vw;
+} 
+/* ---------- Contact ---------- */
+#contact {
+  /* padding: 30vh; */
+  background-color: rgb(23,23,23);
+}
+.fab {
+  font-size: 4.5vw;
+  color: #2867B2;
+  padding: 4.5vh 1vw 1.5vh 2vw;
+}
+footer {
+  padding: 0 0 5vh 13vw;
+  font-size: 1.5vw;
+}
