@@ -148,6 +148,12 @@ a {
 }
 footer {
   font-size: 1.5vw;
-  display: flex;
-  flex-direction: row;
+  text-align: left;
+}
+.back-to-top-a {
+  text-decoration: none;
+  margin-left: 32vw;
+}
+.back-to-top {
+  font-size: 1.5vw !important;
 }

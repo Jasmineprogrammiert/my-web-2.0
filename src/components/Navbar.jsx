@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 const Navigationbar = () => {
   return (
     <>
-    <div className="hero-image"></div>
+    <div href="top" className="hero-image"></div>
     <h1 className="hero-text hero-text-name"><span>Jasmine Zi Xin ZENG</span></h1>
     <Nav.Link href="#about-me" className="hero-text menu-1">
     <span>About me</span>
