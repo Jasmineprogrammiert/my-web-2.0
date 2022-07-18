@@ -38,10 +38,8 @@ h3 {
 }  */
 p, footer {
   font-family: 'Georgia', sans-serif;
-  font-size: 1.7vw;
+  font-size: 1.5vw;
   text-align: justify;
-  padding: 5vh 1vw 0;
-  margin: 0;
 }
 a {
   color: inherit !important;
@@ -58,16 +56,15 @@ a {
   background-attachment: fixed;
 }
 .hero-text {
-  font-size: 4vw;
-  font-family: 'Caveat';
   position: absolute;
   text-align: center;
   top: 18%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-family: 'Caveat';
+  font-size: 4vw;
   font-weight: bold;
   width: 80%;
-  text-align: center;
 }
 .hero-text span:hover {
   font-size: 5.5vw;
@@ -83,7 +80,7 @@ a {
   content: "Hello, welcome to my page !";
   color: yellow;
 }
-.menu-1, .menu-2 {
+.menu-1, .menu-2, .menu-3 {
   top: 38%;
   padding-right: 66vw !important;
   width: 100%;
@@ -93,7 +90,6 @@ a {
 }
 .menu-3 {
   top: 78%;
-  padding-right: 67vw !important;
 }
 .lang-letter {
   font-size: 2.5vw;
@@ -123,9 +119,9 @@ a {
   top: 75%;
 }
 /* ---------- About me ---------- */
-.about-me {
+#about-me {
   background-image: url('/src/assets/img/portrait-01.jpg');
-  height: 115vh;
+  height: 100vh;
   width: 100%;
   background-blend-mode: multiply;
   background-color: rgba(0,0,0,0.4);
@@ -135,20 +131,23 @@ a {
   position: relative;
   background-attachment: fixed;
 }
-.about-me-p {
-  padding: 13vh 13vw;
-} 
+.about-me {
+  padding: 17vh 12vw;
+}
+.about-me p {
+  margin-bottom: 4vh;
+}
 /* ---------- Contact ---------- */
 #contact {
-  /* padding: 30vh; */
-  background-color: rgb(23,23,23);
+  padding: 5vh 0 2vh 12vw;
+  background-color: rgb(17,17,17);
 }
 .fab {
   font-size: 4.5vw;
   color: #2867B2;
-  padding: 4.5vh 1vw 1.5vh 2vw;
+  /* padding: 4.5vh 1vw 1.5vh 2vw; */
 }
 footer {
-  padding: 0 0 5vh 13vw;
+  /* padding: 0 0 5vh 13vw; */
   font-size: 1.5vw;
 }

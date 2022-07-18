@@ -6,7 +6,7 @@ const Navigationbar = () => {
     <div className="hero-image"></div>
     <h1 className="hero-text hero-text-name"><span>Jasmine Zi Xin ZENG</span></h1>
     <Nav.Link href="#about-me" className="hero-text menu-1">
-      <span>About me</span>
+    <span>About me</span>
     </Nav.Link>
     <Nav.Link href="https://deinelieblingsjasmin.com" target="_blank" className="hero-text menu-2">
       <span>My blogs</span>
