@@ -1,12 +1,14 @@
+import EmailIcon from '@mui/icons-material/Email';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+
 const Contact = () => {
   return (
   <>
   <div id="contact">
-    {/* <a href="https://www.linkedin.com/in/jasminzeng/" target="_blank"><i class="fab fa-linkedin"></i></a> */}
-    {/* <FontAwesomeIcon icon={faCoffee} />
-    <FontAwesomeIcon icon={['fab', 'facebook-f']} /> */}
-    {/* <a href="mailto:jasminezeng08@gmail.com" id="email-me">Email Me</a>  */}
-
+    <a href="mailto:jasminezeng08@gmail.com" id="email-me"><EmailIcon className="icons" /></a> 
+    <a href="https://www.linkedin.com/in/jasminzeng/" target="_blank"><LinkedInIcon className="icons" /></a>
+    <a href="https://github.com/Jasmineprogrammiert" target="_blank"><GitHubIcon className="icons" /></a>
     <footer>
       <small>Copyright &copy; 2022 Jasmine Zi Xin Zeng. All rights reserved.</small>
     </footer>
