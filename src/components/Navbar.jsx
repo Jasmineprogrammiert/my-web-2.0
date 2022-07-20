@@ -1,19 +1,28 @@
+import { useState } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const Navigationbar = () => {
   const { i18n, t } = useTranslation(["navbar"]);
-
 	const handleLangChange = e => {
 		i18n.changeLanguage(e.target.id);
 	};
+
+  var originalHeading = `${t("headingName")}`
+  const [heading, setHeading] = useState(originalHeading);
 
   return (
     <>
     <div href="top" className="hero-image"></div>
     <h1 className="hero-text hero-text-name">
-      <span>Jasmine Zi Xin ZENG</span>
+      <span 
+        onMouseOver={() => setHeading(`${t("headingWelcome")}`)}
+        onMouseLeave={() => setHeading(originalHeading)}
+        style={{color: !setHeading ? "yellow" : "#00FFFF"}}
+      >
+        {heading}
+      </span>
     </h1>
     <Nav.Link 
       href="#about-me" 
@@ -35,13 +44,6 @@ const Navigationbar = () => {
     >
       <span>{t("Contact")}</span>
     </Nav.Link> 
-
-
-
-
-
-
-
     <Link 
       to="/" 
       className="hero-text menu-en lang" 
@@ -52,7 +54,8 @@ const Navigationbar = () => {
     <Link 
       to="/de" 
       className="hero-text menu-de lang" 
-      onClick={handleLangChange}
+      // would like to trigger 2 functions, doesn't work
+      onClick={() => {handleLangChange(); setHeading();}}
     >
      <span id="de">{t("DE")}</span>
     </Link>
@@ -63,14 +66,14 @@ const Navigationbar = () => {
       <span id="fr">{t("FR")}</span>
     </Link>
     <Nav.Link 
-      href="#" 
+      href="/sc" 
       className="hero-text menu-sc lang"
       onClick={handleLangChange}
     >
       <span id="sc">{t("SC")}</span>
     </Nav.Link>
     <Nav.Link 
-      href="#" 
+      href="/tc" 
       className="hero-text menu-tc lang"
       onClick={handleLangChange}
     >

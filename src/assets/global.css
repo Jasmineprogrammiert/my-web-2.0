@@ -71,16 +71,6 @@ a {
   font-size: 5vw;
   color: yellow !important;
 }
-.hero-text-name span {
-  color: #00FFFF;
-}
-.hero-text-name:hover span {
-  display: none
-}
-.hero-text-name:hover:after {
-  content: "Hello, welcome to my page !";
-  color: yellow;
-}
 .menu-1, .menu-2, .menu-3 {
   top: 38%;
   padding-right: 66vw !important;
