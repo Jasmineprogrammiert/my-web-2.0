@@ -12,6 +12,20 @@ const Navigationbar = () => {
   var originalHeading = `${t("headingName")}`
   const [heading, setHeading] = useState(originalHeading);
 
+
+
+
+  const [isActive, setIsActive] = useState(false);
+
+  const handleClick = () => {
+    // 👇️ toggle
+    setIsActive(current => !current);
+    // 👇️ or set to true
+    // setIsActive(true);
+  };
+
+
+
   return (
     <>
     <div href="top" className="hero-image"></div>
@@ -19,7 +33,7 @@ const Navigationbar = () => {
       <span 
         onMouseOver={() => setHeading(`${t("headingWelcome")}`)}
         onMouseLeave={() => setHeading(originalHeading)}
-        style={{color: !setHeading ? "yellow" : "#00FFFF"}}
+        style={{color: !setHeading ? "" : "#00FFFF"}}
       >
         {heading}
       </span>
@@ -47,7 +61,7 @@ const Navigationbar = () => {
     <Link 
       to="/" 
       className="hero-text menu-en lang" 
-      onClick={handleLangChange}
+      onClick={(e) => {handleLangChange(e); heading();}}
     >
       <span id="en">{t("EN")}</span>
     </Link>
@@ -55,30 +69,58 @@ const Navigationbar = () => {
       to="/de" 
       className="hero-text menu-de lang" 
       // would like to trigger 2 functions, doesn't work
-      onClick={() => {handleLangChange(); setHeading();}}
+      onClick={(e) => {handleLangChange(e); heading();}}
     >
      <span id="de">{t("DE")}</span>
     </Link>
     <Link 
       to="/fr" 
-      className="hero-text menu-fr lang" 
-      onClick={handleLangChange}>
+      className="hero-text menu-fr lang"
+      onClick={(e) => {handleLangChange(e); heading();}}
+    >
       <span id="fr">{t("FR")}</span>
     </Link>
     <Nav.Link 
       href="/sc" 
       className="hero-text menu-sc lang"
-      onClick={handleLangChange}
+      onClick={(e) => {handleLangChange(e); heading();}}
+      style={{
+        fontFamily: "Noto Sans TC sans-serif",
+        fontSize: "2vw",
+        fontWeight: "lighter",
+      }}
     >
       <span id="sc">{t("SC")}</span>
     </Nav.Link>
     <Nav.Link 
       href="/tc" 
       className="hero-text menu-tc lang"
-      onClick={handleLangChange}
+      onClick={(e) => {handleLangChange(e); heading();}}
+      style={{
+        fontFamily: isActive ? "Noto Sans TC sans-serif" : "",
+        fontSize: isActive ? "2vw" : "",
+        fontWeight: isActive ? "lighter" : "",
+      }}
     >
       <span id="tc">{t("TC")}</span>
     </Nav.Link>
+
+
+    <div>
+      <button
+        style={{
+          backgroundColor: isActive ? 'salmon' : 'black',
+          color: isActive ? 'white' : '',
+        }}
+        onClick={handleClick}
+      >
+        Click
+      </button>
+    </div>
+
+
+
+
     </>
   )
 }
