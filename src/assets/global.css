@@ -64,10 +64,11 @@ a {
   font-family: 'Caveat';
   font-size: 4vw;
   font-weight: bold;
-  width: 80%;
+  width: 100%;
+  text-decoration: none;
 }
 .hero-text span:hover {
-  font-size: 5.5vw;
+  font-size: 5vw;
   color: yellow !important;
 }
 .hero-text-name span {
@@ -91,32 +92,37 @@ a {
 .menu-3 {
   top: 78%;
 }
-.lang-letter {
+.lang {
   font-size: 2.5vw;
   font-weight: lighter;
+  padding-left: 65vw !important;
 }
-.lang-letter span:hover {
+.lang span:hover {
   font-size: 3.5vw;
 }
-.menu-4, .menu-5 {
-  top: 35%;
-  padding-left: 63vw !important;
+.menu-en {
+  top: 32%;
 }
-.menu-5 {
-  top: 50%;
+.menu-de {
+  top: 45%
 }
-.lang-chinese {
+.menu-fr {
+  top: 58%;
+}
+.lang-cn {
   font-family: 'Noto Sans TC', sans-serif;
   font-size: 2vw;
   font-weight: lighter;
-  top: 63%;
   padding-left: 64vw !important;
 }
-.lang-chinese span:hover {
+.lang-cn span:hover {
   font-size: 2.5vw;
 }
-.menu-7 {
-  top: 75%;
+.menu-sc {
+  top: 71%;
+}
+.menu-tc {
+  top: 84%;
 }
 /* ---------- About me ---------- */
 #about-me {
@@ -139,7 +145,7 @@ a {
 }
 /* ---------- Contact ---------- */
 #contact {
-  padding: 5vh 0 2vh 12vw;
+  padding: 2vh 0 1.5vh 12vw;
   background-color: rgb(17,17,17);
 }
 .icons {

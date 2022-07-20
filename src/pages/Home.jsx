@@ -1,3 +1,5 @@
+import Contact from '../components/Contact';
+
 const Home = () => {
   return (
     <>
@@ -17,6 +19,7 @@ const Home = () => {
         </p>
       </div>
     </main>
+    <Contact />
     </>
   )
 }
