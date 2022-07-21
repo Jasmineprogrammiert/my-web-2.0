@@ -1,10 +1,8 @@
-/* ---------- Google Fonts ---------- */
-/* 
+/* ---------- Google Fonts ---------- 
   1. Source Sans Pro
-  2. Noto Sans Traditional Chinese
-  3. Dancing Script
+  2. Open Sans
 */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans+TC&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Source+Sans+Pro&display=swap');
 /* ---------- General ---------- */
 html {
   -webkit-user-select: none;
@@ -42,165 +40,100 @@ a {
 }
 .hero-text {
   position: absolute;
-  text-align: center;
-  top: 18%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  /* text-align: center; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 8.5vw;
   font-weight: bold;
   width: 100%;
   text-decoration: none;
 }
-/* .fade-in-1 {
-  animation: fadeInAnimation ease 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-.fade-in-2 {
-  animation: fadeInAnimation ease 5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-.fade-in-3 {
-  animation: fadeInAnimation ease 8s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-} */
-
 .hero-text-l > span {
   animation-name: slideUp;
-  animation-duration: 4s;
+  animation-duration: 0.5s;
   animation-timing-function: ease-in;
-  display: block;
-  /* transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1); */
-}
-.fade-in-1 > span {
-  animation-delay: 0s;
   animation-fill-mode: forwards;
+  display: block;
+  text-align: left;
 }
-.fade-in-2 > span {
+.menu-1 > span {
+  animation-delay: 0s;
+}
+.menu-2 > span {
+  animation-delay: 150ms;
+}
+.menu-3 > span {
   animation-delay: 300ms;
-  /* animation-fill-mode: forwards; */
-}
-.fade-in-3 > span {
-  animation-delay: 600ms;
-  /* animation-fill-mode: forwards; */
 }
 @keyframes slideUp {
-  /* 0%,
-  50% {
-    transform: translateY(90%);
+  0% {
     opacity: 0;
-  }
-  60%,
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  } */
-
-  0%,
-  60% {
-    transform: translateY(90%);
-    opacity: 0;
-  }
-  70%,
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-  /* 0% {
-    opacity: 0;
-    transform: translateY(30vh);
+    transform: translateY(15%);
   }
   100% {
     opacity: 1;
-    transform: translateY(0%);
-  } */
+  }
 }
-
-
-
-
-
-
-
 .hero-text span:hover {
   color: yellow !important;
-  text-indent: 1.5em;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+  text-indent: 0.5em;
   letter-spacing: 0.2vw;
   text-transform: uppercase;
-  display: table;
 }
 .menu-1, .menu-2, .menu-3 {
-  top: 22%;
-  padding-right: 57vw;
-  width: 100%;
+  padding-left: 13vw;
+}
+.menu-1 {
+  top: 8%;
+  width: 45%;
 }
 .menu-2 {
-  top: 51%;
+  top: 37%;
+  width: 39%;
 }
 .menu-3 {
-  top: 80%;
+  top: 66%;
+  width: 43%;
 }
 .menu-3 span {
   color: #00FFFF;
 }
 .lang-cn-l {
-  font-family: 'Noto Sans TC', sans-serif;
-  font-size: 2.9vw;
+  font-size: 7vw;
+  padding-top: 4.2vh;
 }
-.lang-cn-l span:hover {
-  font-size: 3.4vw;
-}
-/* 
-    32
-    45
-    58
-    71
-    84
-
-    2-98
-*/
 .menu-en {
-  top: 24%;
+  top: 34%;
 }
 .menu-de {
-  top: 37%;
+  top: 44%;
 }
 .menu-fr {
-  top: 50%;
+  top: 54%;
 }
 .menu-sc {
-  top: 63%;
+  top: 64%;
 }
 .menu-tc {
-  top: 76%;
+  top: 74%;
 }
 .lang {
+  font-family: 'Open Sans', sans-serif;
   font-size: 2.5vw;
   font-weight: lighter;
-  padding-left: 65vw !important;
-  font-family: 'Dancing Script cursive' !important;
-}
-.lang span:hover {
-  font-size: 3.5vw;
+  text-align: right;
+  left: 60%;
+  width: 32%;
 }
 .lang-cn-s {
-  font-size: 2vw;
-  font-family: 'Noto Sans TC', sans-serif;
-}
-.lang-cn-s span:hover {
   font-size: 2.5vw;
+  /* text-indent: -5em;
+  letter-spacing: 0.6vw; */
+  text-indent: 2em;
+  letter-spacing: 0.1vw;
 }
 /* ---------- About me ---------- */
 #about-me {

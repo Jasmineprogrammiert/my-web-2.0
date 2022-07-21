@@ -53,7 +53,7 @@ const Navigationbar = () => {
     <div href="top" className="hero-image"></div>
     <Nav.Link 
       href="#about-me" 
-      className={`hero-text hero-text-l fade-in-1 menu-1 ${style1}`}
+      className={`hero-text hero-text-l menu-1 ${style1}`}
     >
       <span
          onMouseOver={() => setHeading(updatedHeading)}
@@ -66,7 +66,7 @@ const Navigationbar = () => {
       href="https://deinelieblingsjasmin.com" 
       target="_blank" 
       rel="noreferrer" 
-      className={`hero-text hero-text-l fade-in-2 menu-2 ${style1}`}
+      className={`hero-text hero-text-l menu-2 ${style1}`}
     >
       <span
          onMouseOver={() => setHeading1(updatedHeading1)}
@@ -77,7 +77,7 @@ const Navigationbar = () => {
     </Nav.Link>
     <Nav.Link 
       href="#contact" 
-      className={`hero-text hero-text-l fade-in-3 menu-3 ${style1}`}
+      className={`hero-text hero-text-l menu-3 ${style1}`}
     >
       <span
         onMouseOver={() => setHeading2(updatedHeading2)}
@@ -96,7 +96,7 @@ const Navigationbar = () => {
         handleHeading(); 
         handleHeading1(); 
         handleHeading2(); 
-        handleStyleChangeBack();
+        // handleStyleChangeBack();
         handleStyleChange1Back();
       }}>
       <span id="en">{t("EN")}</span>
@@ -109,7 +109,7 @@ const Navigationbar = () => {
         handleHeading(); 
         handleHeading1(); 
         handleHeading2(); 
-        handleStyleChangeBack();
+        // handleStyleChangeBack();
         handleStyleChange1Back()
       }}>
      <span id="de">{t("DE")}</span>
@@ -122,7 +122,7 @@ const Navigationbar = () => {
         handleHeading(); 
         handleHeading1(); 
         handleHeading2(); 
-        handleStyleChangeBack();
+        // handleStyleChangeBack();
         handleStyleChange1Back()
       }}>
       <span id="fr">{t("FR")}</span>
@@ -137,7 +137,7 @@ const Navigationbar = () => {
         handleHeading1(); 
         handleHeading2(); 
         handleStyleChange(); 
-        handleStyleChange1()
+        // handleStyleChange1()
       }}>
       <span id="sc">{t("SC")}</span>
     </Link>
@@ -150,7 +150,7 @@ const Navigationbar = () => {
         handleHeading1(); 
         handleHeading2(); 
         handleStyleChange(); 
-        handleStyleChange1()
+        // handleStyleChange1()
       }}>
       <span id="tc">{t("TC")}</span>
     </Link>
