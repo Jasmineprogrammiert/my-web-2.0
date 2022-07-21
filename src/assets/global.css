@@ -23,19 +23,6 @@ h1 {
   font-size: 5.5vw !important;
   text-align: center;
 }
-/* h2 {
-  color: honeydew;
-  font-family: 'Kaushan Script', 'cursive';
-  font-size: 5vw;
-  text-align: center;
-  clear: both;
-}
-h3 { 
-  color: ivory;
-  font-family: 'Satisfy', 'cursive';
-  font-size: 2.7vw;
-  text-align: center;
-}  */
 p, footer {
   font-family: 'Georgia', sans-serif;
   font-size: 1.5vw;
@@ -82,13 +69,12 @@ a {
 .menu-3 {
   top: 78%;
 }
-.lang {
-  font-size: 2.5vw;
-  font-weight: lighter;
-  padding-left: 65vw !important;
+.lang-cn-l {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 2.9vw;
 }
-.lang span:hover {
-  font-size: 3.5vw;
+.lang-cn-l span:hover {
+  font-size: 3.4vw;
 }
 .menu-en {
   top: 32%;
@@ -99,20 +85,26 @@ a {
 .menu-fr {
   top: 58%;
 }
-.lang-cn {
-  font-family: 'Noto Sans TC', sans-serif;
-  font-size: 2vw;
-  font-weight: lighter;
-  padding-left: 65vw !important;
-}
-.lang-cn span:hover {
-  font-size: 2.5vw;
-}
 .menu-sc {
   top: 71%;
 }
 .menu-tc {
   top: 84%;
+}
+.lang {
+  font-size: 2.5vw;
+  font-weight: lighter;
+  padding-left: 65vw !important;
+}
+.lang span:hover {
+  font-size: 3.5vw;
+}
+.lang-cn-s {
+  font-size: 2vw;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+.lang-cn-s span:hover {
+  font-size: 2.5vw;
 }
 /* ---------- About me ---------- */
 #about-me {
