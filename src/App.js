@@ -4,6 +4,8 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import HomeDe from './pages/HomeDe';
 import HomeFr from './pages/HomeFr';
+import HomeSc from './pages/HomeSc';
+import HomeTc from './pages/HomeTc';
 // folder
 import './i18n';
 // styles
@@ -19,6 +21,8 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="de" element={<HomeDe />} />
       <Route path="fr" element={<HomeFr />} />
+      <Route path="sc" element={<HomeSc />} />
+      <Route path="tc" element={<HomeTc />} />
     </Routes>
     </>
   );

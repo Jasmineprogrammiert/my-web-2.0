@@ -9,38 +9,33 @@ const Navigationbar = () => {
 		i18n.changeLanguage(e.target.id);
 	};
 
-  var originalHeading = `${t("headingName")}`
+  const originalHeading = `${t("headingName")}`;
+  const updatedHeading = `${t("headingWelcome")}`;
   const [heading, setHeading] = useState(originalHeading);
-
-
-
-
-  const [isActive, setIsActive] = useState(false);
-
-  const handleClick = () => {
-    // 👇️ toggle
-    setIsActive(current => !current);
-    // 👇️ or set to true
-    // setIsActive(true);
+  const handleHeading = () => {
+    setHeading(`${t("headingName")}`);
   };
 
-
+  const [style, setStyle] = useState("");
+  const handleStyleChange = () => {
+    setStyle("lang-cn");
+  }
 
   return (
     <>
     <div href="top" className="hero-image"></div>
     <h1 className="hero-text hero-text-name">
       <span 
-        onMouseOver={() => setHeading(`${t("headingWelcome")}`)}
+        onMouseOver={() => setHeading(updatedHeading)}
         onMouseLeave={() => setHeading(originalHeading)}
-        style={{color: !setHeading ? "" : "#00FFFF"}}
+        style={{color: setHeading ? "#00FFFF" : ""}}
       >
         {heading}
       </span>
     </h1>
     <Nav.Link 
       href="#about-me" 
-      className="hero-text menu-1"
+      className={`hero-text menu-1`}
     >
       <span>{t("aboutMe")}</span>
     </Nav.Link> 
@@ -48,79 +43,52 @@ const Navigationbar = () => {
       href="https://deinelieblingsjasmin.com" 
       target="_blank" 
       rel="noreferrer" 
-      className="hero-text menu-2"
+      className={`hero-text menu-2`}
     >
       <span>{t("myBlogs")}</span>
     </Nav.Link>
     <Nav.Link 
       href="#contact" 
-      className="hero-text menu-3"
+      className={`hero-text menu-3`}
     >
       <span>{t("Contact")}</span>
     </Nav.Link> 
     <Link 
-      to="/" 
-      className="hero-text menu-en lang" 
-      onClick={(e) => {handleLangChange(e); heading();}}
+      to="/"
+      className={`hero-text menu-en lang ${style}`}
+      // need to change the style back
+      onClick={e => {handleLangChange(e); handleHeading();}}
     >
       <span id="en">{t("EN")}</span>
     </Link>
-    <Link 
-      to="/de" 
-      className="hero-text menu-de lang" 
-      // would like to trigger 2 functions, doesn't work
-      onClick={(e) => {handleLangChange(e); heading();}}
+    <Link  
+      to="/de"
+      className={`hero-text menu-de lang ${style}`}
+      onClick={e => {handleLangChange(e); handleHeading();}}
     >
      <span id="de">{t("DE")}</span>
     </Link>
-    <Link 
+    <Link  
       to="/fr" 
-      className="hero-text menu-fr lang"
-      onClick={(e) => {handleLangChange(e); heading();}}
+      className={`hero-text menu-fr lang ${style}`}
+      onClick={e => {handleLangChange(e); handleHeading();}}
     >
       <span id="fr">{t("FR")}</span>
     </Link>
-    <Nav.Link 
-      href="/sc" 
-      className="hero-text menu-sc lang"
-      onClick={(e) => {handleLangChange(e); heading();}}
-      style={{
-        fontFamily: "Noto Sans TC sans-serif",
-        fontSize: "2vw",
-        fontWeight: "lighter",
-      }}
+    <Link  
+      to="/sc" 
+      className={`hero-text menu-sc lang ${style}`}
+      onClick={e => {handleLangChange(e); handleHeading(); handleStyleChange()}}
     >
       <span id="sc">{t("SC")}</span>
-    </Nav.Link>
-    <Nav.Link 
-      href="/tc" 
-      className="hero-text menu-tc lang"
-      onClick={(e) => {handleLangChange(e); heading();}}
-      style={{
-        fontFamily: isActive ? "Noto Sans TC sans-serif" : "",
-        fontSize: isActive ? "2vw" : "",
-        fontWeight: isActive ? "lighter" : "",
-      }}
+    </Link>
+    <Link  
+      to="/tc" 
+      className={`hero-text menu-tc lang ${style}`}
+      onClick={e => {handleLangChange(e); handleHeading(); handleStyleChange()}}
     >
       <span id="tc">{t("TC")}</span>
-    </Nav.Link>
-
-
-    <div>
-      <button
-        style={{
-          backgroundColor: isActive ? 'salmon' : 'black',
-          color: isActive ? 'white' : '',
-        }}
-        onClick={handleClick}
-      >
-        Click
-      </button>
-    </div>
-
-
-
-
+    </Link>
     </>
   )
 }

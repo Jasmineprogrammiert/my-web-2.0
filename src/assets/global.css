@@ -94,7 +94,7 @@ a {
   top: 32%;
 }
 .menu-de {
-  top: 45%
+  top: 45%;
 }
 .menu-fr {
   top: 58%;
@@ -103,7 +103,7 @@ a {
   font-family: 'Noto Sans TC', sans-serif;
   font-size: 2vw;
   font-weight: lighter;
-  padding-left: 64vw !important;
+  padding-left: 65vw !important;
 }
 .lang-cn span:hover {
   font-size: 2.5vw;
