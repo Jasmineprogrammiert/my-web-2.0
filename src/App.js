@@ -15,7 +15,7 @@ import './assets/global.css';
 function App() {
   return (
     <>
-    <Navbar />   
+    <Navbar />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="de" element={<HomeDe />} />

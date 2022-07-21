@@ -9,13 +9,28 @@ const Navigationbar = () => {
 		i18n.changeLanguage(e.target.id);
 	};
 
-  const originalHeading = `${t("headingName")}`;
-  const updatedHeading = `${t("headingWelcome")}`;
+  const originalHeading = `${t("aboutMe")}`;
+  const updatedHeading = `${t("aboutMe1")}`;
   const [heading, setHeading] = useState(originalHeading);
   const handleHeading = () => {
-    setHeading(`${t("headingName")}`);
+    setHeading(`${t("aboutMe")}`);
   };
 
+  const originalHeading1 = `${t("myBlogs")}`;
+  const updatedHeading1 = `${t("myBlogs1")}`;
+  const [heading1, setHeading1] = useState(originalHeading1);
+  const handleHeading1 = () => {
+    setHeading1(`${t("myBlogs")}`);
+  };
+
+  const originalHeading2 = `${t("Contact")}`;
+  const updatedHeading2 = `${t("Contact1")}`;
+  const [heading2, setHeading2] = useState(originalHeading2);
+  const handleHeading2 = () => {
+    setHeading2(`${t("Contact")}`);
+  };
+
+// MODIFYING ..............................
   const [style, setStyle] = useState("");
   const handleStyleChange = () => {
     setStyle("lang-cn-s");
@@ -31,45 +46,56 @@ const Navigationbar = () => {
   const handleStyleChange1Back = () => {
     setStyle1("hero-text");
   }
+// MODIFYING ..............................
 
   return (
     <>
     <div href="top" className="hero-image"></div>
-    <h1 className="hero-text">
-      <span 
-        onMouseOver={() => setHeading(updatedHeading)}
-        onMouseLeave={() => setHeading(originalHeading)}
-        style={{color: setHeading ? "#00FFFF" : ""}}
+    <Nav.Link 
+      href="#about-me" 
+      className={`hero-text hero-text-l fade-in-1 menu-1 ${style1}`}
+    >
+      <span
+         onMouseOver={() => setHeading(updatedHeading)}
+         onMouseLeave={() => setHeading(originalHeading)}
       >
         {heading}
       </span>
-    </h1>
-    <Nav.Link 
-      href="#about-me" 
-      className={`hero-text menu-1 ${style1}`}
-    >
-      <span>{t("aboutMe")}</span>
     </Nav.Link> 
     <Nav.Link 
       href="https://deinelieblingsjasmin.com" 
       target="_blank" 
       rel="noreferrer" 
-      className={`hero-text menu-2 ${style1}`}
+      className={`hero-text hero-text-l fade-in-2 menu-2 ${style1}`}
     >
-      <span>{t("myBlogs")}</span>
+      <span
+         onMouseOver={() => setHeading1(updatedHeading1)}
+         onMouseLeave={() => setHeading1(originalHeading1)}
+      >
+        {heading1}
+      </span>
     </Nav.Link>
     <Nav.Link 
       href="#contact" 
-      className={`hero-text menu-3 ${style1}`}
+      className={`hero-text hero-text-l fade-in-3 menu-3 ${style1}`}
     >
-      <span>{t("Contact")}</span>
+      <span
+        onMouseOver={() => setHeading2(updatedHeading2)}
+        onMouseLeave={() => setHeading2(originalHeading2)}
+      >
+        {heading2}
+      </span>
     </Nav.Link> 
+
+{/* // MODIFYING .............................. */}
     <Link 
       to="/"
       className={`hero-text menu-en lang ${style}`}
       onClick={e => {
         handleLangChange(e); 
         handleHeading(); 
+        handleHeading1(); 
+        handleHeading2(); 
         handleStyleChangeBack();
         handleStyleChange1Back();
       }}>
@@ -81,6 +107,8 @@ const Navigationbar = () => {
       onClick={e => {
         handleLangChange(e); 
         handleHeading(); 
+        handleHeading1(); 
+        handleHeading2(); 
         handleStyleChangeBack();
         handleStyleChange1Back()
       }}>
@@ -92,17 +120,22 @@ const Navigationbar = () => {
       onClick={e => {
         handleLangChange(e); 
         handleHeading(); 
+        handleHeading1(); 
+        handleHeading2(); 
         handleStyleChangeBack();
         handleStyleChange1Back()
       }}>
       <span id="fr">{t("FR")}</span>
     </Link>
+{/* // MODIFYING .............................. */}
     <Link  
       to="/sc" 
       className={`hero-text menu-sc lang ${style}`}
       onClick={e => {
         handleLangChange(e); 
         handleHeading(); 
+        handleHeading1(); 
+        handleHeading2(); 
         handleStyleChange(); 
         handleStyleChange1()
       }}>
@@ -114,11 +147,14 @@ const Navigationbar = () => {
       onClick={e => {
         handleLangChange(e); 
         handleHeading(); 
+        handleHeading1(); 
+        handleHeading2(); 
         handleStyleChange(); 
         handleStyleChange1()
       }}>
       <span id="tc">{t("TC")}</span>
     </Link>
+{/* // MODIFYING .............................. */}
     </>
   )
 }

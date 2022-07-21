@@ -1,7 +1,10 @@
 /* ---------- Google Fonts ---------- */
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
+/* 
+  1. Source Sans Pro
+  2. Noto Sans Traditional Chinese
+  3. Dancing Script
+*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans+TC&family=Source+Sans+Pro&display=swap');
 /* ---------- General ---------- */
 html {
   -webkit-user-select: none;
@@ -17,11 +20,6 @@ html {
   padding: 0;
   box-sizing: border-box;
   color: white;
-}
-h1 {
-  font-family: 'Satisfy', 'cursive' !important;
-  font-size: 5.5vw !important;
-  text-align: center;
 }
 p, footer {
   font-family: 'Georgia', sans-serif;
@@ -48,26 +46,114 @@ a {
   top: 18%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: 'Caveat';
-  font-size: 4vw;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 8.5vw;
   font-weight: bold;
   width: 100%;
   text-decoration: none;
 }
+/* .fade-in-1 {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.fade-in-2 {
+  animation: fadeInAnimation ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.fade-in-3 {
+  animation: fadeInAnimation ease 8s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
+.hero-text-l > span {
+  animation-name: slideUp;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  display: block;
+  /* transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1); */
+}
+.fade-in-1 > span {
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+.fade-in-2 > span {
+  animation-delay: 300ms;
+  /* animation-fill-mode: forwards; */
+}
+.fade-in-3 > span {
+  animation-delay: 600ms;
+  /* animation-fill-mode: forwards; */
+}
+@keyframes slideUp {
+  /* 0%,
+  50% {
+    transform: translateY(90%);
+    opacity: 0;
+  }
+  60%,
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  } */
+
+  0%,
+  60% {
+    transform: translateY(90%);
+    opacity: 0;
+  }
+  70%,
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  /* 0% {
+    opacity: 0;
+    transform: translateY(30vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  } */
+}
+
+
+
+
+
+
+
 .hero-text span:hover {
-  font-size: 5vw;
   color: yellow !important;
+  text-indent: 1.5em;
+  letter-spacing: 0.2vw;
+  text-transform: uppercase;
+  display: table;
 }
 .menu-1, .menu-2, .menu-3 {
-  top: 38%;
-  padding-right: 66vw !important;
+  top: 22%;
+  padding-right: 57vw;
   width: 100%;
 }
 .menu-2 {
-  top: 58%;
+  top: 51%;
 }
 .menu-3 {
-  top: 78%;
+  top: 80%;
+}
+.menu-3 span {
+  color: #00FFFF;
 }
 .lang-cn-l {
   font-family: 'Noto Sans TC', sans-serif;
@@ -76,25 +162,35 @@ a {
 .lang-cn-l span:hover {
   font-size: 3.4vw;
 }
+/* 
+    32
+    45
+    58
+    71
+    84
+
+    2-98
+*/
 .menu-en {
-  top: 32%;
+  top: 24%;
 }
 .menu-de {
-  top: 45%;
+  top: 37%;
 }
 .menu-fr {
-  top: 58%;
+  top: 50%;
 }
 .menu-sc {
-  top: 71%;
+  top: 63%;
 }
 .menu-tc {
-  top: 84%;
+  top: 76%;
 }
 .lang {
   font-size: 2.5vw;
   font-weight: lighter;
   padding-left: 65vw !important;
+  font-family: 'Dancing Script cursive' !important;
 }
 .lang span:hover {
   font-size: 3.5vw;
