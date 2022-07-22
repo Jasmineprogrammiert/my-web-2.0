@@ -84,7 +84,7 @@ const Navigationbar = () => {
         {heading2}
       </span>
     </Nav.Link> 
-    <h1 className="hero-text hero-text-l titles menu-4">
+    {/* <h1 className="hero-text hero-text-l titles menu-4">
       <span>{t("titles.title-1")}</span>
     </h1>
     <h1 className="hero-text hero-text-l titles menu-5">
@@ -92,9 +92,10 @@ const Navigationbar = () => {
     </h1>
     <h1 className="hero-text hero-text-l titles menu-6">
       <span>{t("titles.title-3")}</span>
-    </h1>
+    </h1> */}
     <Link 
-      to="/"
+      // to="/"
+      to="/en"
       className={`hero-text menu-en lang ${style}`}
       onClick={e => {
         handleLangChange(e); 

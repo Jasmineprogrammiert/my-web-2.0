@@ -17,9 +17,11 @@ function App() {
     <>
     <Router>
       <Suspense fallback={<Spinner />}>
-        <Navbar />
+        {/* <Navbar /> */}
         <Routes>
-          <Route path="/" element={<Home />} />
+          {/* <Route path="/" element={<Home />} /> */}
+          <Route path="/" element={<Navbar />} />
+          <Route path="en" element={<Home />} />
           <Route path="de" element={<HomeDe />} />
           <Route path="fr" element={<HomeFr />} />
           <Route path="sc" element={<HomeSc />} />

@@ -84,7 +84,7 @@ a {
 }
 .menu-1 {
   top: 8%;
-  width: 45%;
+  width: 57%;
 }
 .menu-2 {
   top: 37%;
@@ -128,7 +128,7 @@ a {
   font-weight: lighter;
   text-align: right;
   width: 7%;
-  top: 6%;
+  top: 14%;
 }
 .lang > span {
   animation: slideDown .5s ease-in-out;
@@ -152,7 +152,7 @@ a {
 @keyframes slideDown {
   0% {
     opacity: 0;
-    transform: translateY(-80%);
+    transform: translateY(-5vh);
   }
   100% {
     opacity: 1;
@@ -160,19 +160,19 @@ a {
   }
 }
 .menu-en {
-  left: 61%;
+  left: 62%;
 }
 .menu-de {
-  left: 67%;
+  left: 68.5%;
 }
 .menu-fr {
-  left: 73%;
+  left: 74%;
 }
 .menu-sc {
-  left: 79%;
+  left: 80%;
 }
 .menu-tc {
-  left: 85%;
+  left: 86%;
 }
 .lang-hero-text-l {
   font-size: 7vw;
