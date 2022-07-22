@@ -13,7 +13,7 @@ i18n
     },
     fallbackLng: "en",
     debug: true,
-    ns: ["contact", "navbar"],
+    ns: ["about", "contact", "navbar"],
 
     interpolation: {
       escapeValue: false,

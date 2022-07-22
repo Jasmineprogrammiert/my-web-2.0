@@ -30,28 +30,12 @@ const Navigationbar = () => {
     setHeading2(`${t("contact")}`);
   };
 
-  const [style, setStyle] = useState("");
-  const handleStyleChange = () => {
-    setStyle("lang-lang");
-  };
-  const handleStyleChangeBack = () => {
-    setStyle("lang");
-  }
-
-  const [style1, setStyle1] = useState("");
-  const handleStyleChange1 = () => {
-    setStyle1("lang-hero-text-l");
-  };
-  const handleStyleChange1Back = () => {
-    setStyle1("hero-text");
-  }
-
   return (
     <>
     <div href="top" className="hero-image"></div>
-    <Nav.Link 
-      href="#about-me" 
-      className={`hero-text hero-text-l menu-1 ${style1}`}
+    <Link 
+      to="/about" 
+      className={`hero-text hero-text-l menu-1`}
     >
       <span
          onMouseOver={() => setHeading(updatedHeading)}
@@ -59,12 +43,12 @@ const Navigationbar = () => {
       >
         {heading}
       </span>
-    </Nav.Link> 
+    </Link> 
     <Nav.Link 
       href="https://deinelieblingsjasmin.com" 
       target="_blank" 
       rel="noreferrer" 
-      className={`hero-text hero-text-l menu-2 ${style1}`}
+      className={`hero-text hero-text-l menu-2`}
     >
       <span
          onMouseOver={() => setHeading1(updatedHeading1)}
@@ -73,9 +57,9 @@ const Navigationbar = () => {
         {heading1}
       </span>
     </Nav.Link>
-    <Nav.Link 
-      href="#contact" 
-      className={`hero-text hero-text-l menu-3 ${style1}`}
+    <Link 
+      to="/contact" 
+      className={`hero-text hero-text-l menu-3`}
     >
       <span
         onMouseOver={() => setHeading2(updatedHeading2)}
@@ -83,82 +67,57 @@ const Navigationbar = () => {
       >
         {heading2}
       </span>
-    </Nav.Link> 
-    {/* <h1 className="hero-text hero-text-l titles menu-4">
-      <span>{t("titles.title-1")}</span>
-    </h1>
-    <h1 className="hero-text hero-text-l titles menu-5">
-      <span>{t("titles.title-2")}</span>
-    </h1>
-    <h1 className="hero-text hero-text-l titles menu-6">
-      <span>{t("titles.title-3")}</span>
-    </h1> */}
-    <Link 
-      // to="/"
-      to="/en"
-      className={`hero-text menu-en lang ${style}`}
+    </Link> 
+    <div
+      className={`hero-text menu-en lang`}
       onClick={e => {
         handleLangChange(e); 
         handleHeading(); 
         handleHeading1(); 
         handleHeading2(); 
-        handleStyleChangeBack();
-        handleStyleChange1Back()
       }}>
       <span id="en">{t("EN")}</span>
-    </Link>
-    <Link  
-      to="/de"
-      className={`hero-text menu-de lang ${style}`}
+    </div>
+    <div  
+      className={`hero-text menu-de lang`}
       onClick={e => {
         handleLangChange(e); 
         handleHeading(); 
         handleHeading1(); 
         handleHeading2(); 
-        handleStyleChangeBack();
-        handleStyleChange1Back()
       }}>
      <span id="de">{t("DE")}</span>
-    </Link>
-    <Link  
-      to="/fr" 
-      className={`hero-text menu-fr lang ${style}`}
+    </div>
+    <div
+      className={`hero-text menu-fr lang`}
       onClick={e => {
         handleLangChange(e); 
         handleHeading(); 
         handleHeading1(); 
         handleHeading2(); 
-        handleStyleChangeBack();
-        handleStyleChange1Back()
       }}>
       <span id="fr">{t("FR")}</span>
-    </Link>
-    <Link  
-      to="/sc" 
-      className={`hero-text menu-sc lang ${style}`}
+    </div>
+    <div 
+      className={`hero-text menu-sc lang`}
       onClick={e => {
         handleLangChange(e); 
         handleHeading(); 
         handleHeading1(); 
         handleHeading2(); 
-        handleStyleChange(); 
-        handleStyleChange1()
       }}>
       <span id="sc">{t("SC")}</span>
-    </Link>
-    <Link  
-      to="/tc" 
-      className={`hero-text menu-tc lang ${style}`}
+    </div>
+    <div  
+      className={`hero-text menu-tc lang`}
       onClick={e => {
         handleLangChange(e); 
         handleHeading(); 
         handleHeading1(); 
         handleHeading2(); 
-        handleStyleChange(); 
-        handleStyleChange1()
       }}>
       <span id="tc">{t("TC")}</span>
-    </Link>
+    </div>
     </>
   )
 }

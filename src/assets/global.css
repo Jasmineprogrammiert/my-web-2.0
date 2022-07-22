@@ -84,7 +84,7 @@ a {
 }
 .menu-1 {
   top: 8%;
-  width: 57%;
+  width: 47%;
 }
 .menu-2 {
   top: 37%;
@@ -124,7 +124,7 @@ a {
 }
 .lang {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.8vw;
+  font-size: 2vw;
   font-weight: lighter;
   text-align: right;
   width: 7%;
@@ -163,7 +163,7 @@ a {
   left: 62%;
 }
 .menu-de {
-  left: 68.5%;
+  left: 68%;
 }
 .menu-fr {
   left: 74%;
@@ -173,13 +173,6 @@ a {
 }
 .menu-tc {
   left: 86%;
-}
-.lang-hero-text-l {
-  font-size: 7vw;
-  padding-top: 4.2vh;
-}
-.lang-lang {
-  letter-spacing: 0.1vw;
 }
 /* ---------- About me ---------- */
 #about-me {
