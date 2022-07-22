@@ -40,9 +40,7 @@ a {
 }
 .hero-text {
   position: absolute;
-  /* text-align: center; */
-  /* left: 50%; */
-  /* transform: translate(-50%, -50%); */
+  transform: translate(-6%, 0%);
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 8.5vw;
   font-weight: bold;
@@ -106,33 +104,29 @@ a {
   padding-top: 4.2vh;
 }
 .menu-en {
-  top: 34%;
+  top: 56%;
 }
 .menu-de {
-  top: 44%;
+  top: 36%;
 }
 .menu-fr {
-  top: 54%;
+  top: 46%;
 }
 .menu-sc {
-  top: 64%;
+  top: 26%;
 }
 .menu-tc {
-  top: 74%;
+  top: 16%;
 }
 .lang {
   font-family: 'Open Sans', sans-serif;
   font-size: 2.5vw;
   font-weight: lighter;
   text-align: right;
-  left: 60%;
-  width: 32%;
+  left: 55%;
+  width: 39%;
 }
 .lang-cn-s {
-  font-size: 2.5vw;
-  /* text-indent: -5em;
-  letter-spacing: 0.6vw; */
-  text-indent: 2em;
   letter-spacing: 0.1vw;
 }
 /* ---------- About me ---------- */

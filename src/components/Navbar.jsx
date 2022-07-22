@@ -30,7 +30,6 @@ const Navigationbar = () => {
     setHeading2(`${t("Contact")}`);
   };
 
-// MODIFYING ..............................
   const [style, setStyle] = useState("");
   const handleStyleChange = () => {
     setStyle("lang-cn-s");
@@ -46,7 +45,6 @@ const Navigationbar = () => {
   const handleStyleChange1Back = () => {
     setStyle1("hero-text");
   }
-// MODIFYING ..............................
 
   return (
     <>
@@ -86,8 +84,6 @@ const Navigationbar = () => {
         {heading2}
       </span>
     </Nav.Link> 
-
-{/* // MODIFYING .............................. */}
     <Link 
       to="/"
       className={`hero-text menu-en lang ${style}`}
@@ -96,7 +92,7 @@ const Navigationbar = () => {
         handleHeading(); 
         handleHeading1(); 
         handleHeading2(); 
-        // handleStyleChangeBack();
+        handleStyleChangeBack();
         handleStyleChange1Back();
       }}>
       <span id="en">{t("EN")}</span>
@@ -109,7 +105,7 @@ const Navigationbar = () => {
         handleHeading(); 
         handleHeading1(); 
         handleHeading2(); 
-        // handleStyleChangeBack();
+        handleStyleChangeBack();
         handleStyleChange1Back()
       }}>
      <span id="de">{t("DE")}</span>
@@ -122,12 +118,11 @@ const Navigationbar = () => {
         handleHeading(); 
         handleHeading1(); 
         handleHeading2(); 
-        // handleStyleChangeBack();
+        handleStyleChangeBack();
         handleStyleChange1Back()
       }}>
       <span id="fr">{t("FR")}</span>
     </Link>
-{/* // MODIFYING .............................. */}
     <Link  
       to="/sc" 
       className={`hero-text menu-sc lang ${style}`}
@@ -137,7 +132,7 @@ const Navigationbar = () => {
         handleHeading1(); 
         handleHeading2(); 
         handleStyleChange(); 
-        // handleStyleChange1()
+        handleStyleChange1()
       }}>
       <span id="sc">{t("SC")}</span>
     </Link>
@@ -150,11 +145,10 @@ const Navigationbar = () => {
         handleHeading1(); 
         handleHeading2(); 
         handleStyleChange(); 
-        // handleStyleChange1()
+        handleStyleChange1()
       }}>
       <span id="tc">{t("TC")}</span>
     </Link>
-{/* // MODIFYING .............................. */}
     </>
   )
 }
