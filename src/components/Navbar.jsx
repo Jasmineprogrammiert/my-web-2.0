@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const Navigationbar = () => {
-  const { i18n, t } = useTranslation(["navbar"]);
+  const { t, i18n } = useTranslation(["navbar"]);
+
+
 	const handleLangChange = e => {
 		i18n.changeLanguage(e.target.id);
 	};
@@ -29,6 +31,15 @@ const Navigationbar = () => {
   const handleHeading2 = () => {
     setHeading2(`${t("Contact")}`);
   };
+
+  // const [titles, setTitles] = useState("");
+  // const handleTitles = () => {
+  //   setTitiles(`${t("Titles")}`);
+  // };
+
+
+
+
 
   const [style, setStyle] = useState("");
   const handleStyleChange = () => {
@@ -84,6 +95,17 @@ const Navigationbar = () => {
         {heading2}
       </span>
     </Nav.Link> 
+
+
+
+
+    {/* <h1 className="hero-text hero-text-l menu-4">
+      {t("Titles")}
+    </h1> */}
+    
+
+
+
     <Link 
       to="/"
       className={`hero-text menu-en lang ${style}`}
@@ -93,7 +115,7 @@ const Navigationbar = () => {
         handleHeading1(); 
         handleHeading2(); 
         handleStyleChangeBack();
-        handleStyleChange1Back();
+        handleStyleChange1Back()
       }}>
       <span id="en">{t("EN")}</span>
     </Link>

@@ -48,38 +48,35 @@ a {
   text-decoration: none;
 }
 .hero-text-l > span {
-  animation-name: slideUp;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
   display: block;
   text-align: left;
+  animation: slideUp .6s cubic-bezier(0.2, 0.6, 0.2, 1);
 }
 .menu-1 > span {
-  animation-delay: 0s;
+  animation-delay: .1s;
 }
 .menu-2 > span {
-  animation-delay: 150ms;
+  animation-delay: .3s;
 }
 .menu-3 > span {
-  animation-delay: 300ms;
+  animation-delay: .5s;
 }
 @keyframes slideUp {
   0% {
     opacity: 0;
-    transform: translateY(15%);
+    transform: translateY(10vh);
   }
   100% {
     opacity: 1;
+    transform: translateY(0%);
   }
 }
 .hero-text span:hover {
   color: yellow !important;
-  transition-duration: 300ms;
-  transition-timing-function: ease-in-out;
   text-indent: 0.5em;
   letter-spacing: 0.2vw;
   text-transform: uppercase;
+  transition: .5s ease-out;
 }
 .menu-1, .menu-2, .menu-3 {
   padding-left: 13vw;
@@ -98,6 +95,12 @@ a {
 }
 .menu-3 span {
   color: #00FFFF;
+}
+.menu-4 {
+  font-size: 3vw;
+  top: 76%;
+  padding-left: 10vw;
+  /* width: 43%; */
 }
 .lang-cn-l {
   font-size: 7vw;
@@ -128,6 +131,35 @@ a {
 }
 .lang-cn-s {
   letter-spacing: 0.1vw;
+}
+.lang > span {
+  animation: slideDown .5s ease-in-out;
+  display: block;
+}
+.menu-tc > span {
+  animation-delay: 250ms;
+}
+.menu-sc > span {
+  animation-delay: 200ms;
+}
+.menu-de > span {
+  animation-delay: 150ms;
+}
+.menu-fr > span {
+  animation-delay: 100ms;
+}
+.menu-en > span {
+  animation-delay: 50ms;
+}
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-80%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 /* ---------- About me ---------- */
 #about-me {
