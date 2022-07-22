@@ -37,6 +37,18 @@ a {
   background-size: cover;
   position: relative;
   background-attachment: fixed;
+  animation: hero-img 1.15s cubic-bezier(.5, .6, .6, 1);
+  animation-fill-mode: backwards;
+}
+@keyframes hero-img {
+  0% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 .hero-text {
   position: absolute;
@@ -57,7 +69,8 @@ a {
 .hero-text-l > span {
   display: block;
   text-align: left;
-  animation: slideUp .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+  animation: slideUp .5s cubic-bezier(0.2, 0.6, 0.2, 1);
+  animation-fill-mode: backwards;
 }
 .menu-1 > span {
   animation-delay: .1s;
@@ -72,7 +85,7 @@ a {
 @keyframes slideUp {
   0% {
     opacity: 0;
-    transform: translateY(10vh);
+    transform: translateY(13vh);
   }
   100% {
     opacity: 1;
@@ -131,23 +144,24 @@ a {
   top: 14%;
 }
 .lang > span {
-  animation: slideDown .5s ease-in-out;
+  animation: slideDown .3s;
   display: block;
+  animation-fill-mode: backwards;
 }
 .menu-tc > span {
-  animation-delay: 250ms;
+  animation-delay: .7s;
 }
 .menu-sc > span {
-  animation-delay: 200ms;
+  animation-delay: .55s;
 }
 .menu-de > span {
-  animation-delay: 150ms;
+  animation-delay: .25s;
 }
 .menu-fr > span {
-  animation-delay: 100ms;
+  animation-delay: .4s;
 }
 .menu-en > span {
-  animation-delay: 50ms;
+  animation-delay: .1s;
 }
 @keyframes slideDown {
   0% {
