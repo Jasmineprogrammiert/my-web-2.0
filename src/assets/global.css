@@ -47,6 +47,13 @@ a {
   width: 100%;
   text-decoration: none;
 }
+.hero-text span:hover {
+  color: yellow !important;
+  text-indent: 0.5em;
+  letter-spacing: 0.2vw;
+  text-transform: uppercase;
+  transition: .5s ease-out;
+}
 .hero-text-l > span {
   display: block;
   text-align: left;
@@ -60,6 +67,7 @@ a {
 }
 .menu-3 > span {
   animation-delay: .5s;
+  color: #00FFFF;
 }
 @keyframes slideUp {
   0% {
@@ -70,13 +78,6 @@ a {
     opacity: 1;
     transform: translateY(0%);
   }
-}
-.hero-text span:hover {
-  color: yellow !important;
-  text-indent: 0.5em;
-  letter-spacing: 0.2vw;
-  text-transform: uppercase;
-  transition: .5s ease-out;
 }
 .menu-1, .menu-2, .menu-3 {
   padding-left: 13vw;
@@ -93,44 +94,41 @@ a {
   top: 66%;
   width: 43%;
 }
-.menu-3 span {
-  color: #00FFFF;
+.titles > span {
+  text-align: right;
+  font-size: 3.5vw;
 }
 .menu-4 {
-  font-size: 3vw;
-  top: 76%;
-  padding-left: 10vw;
-  /* width: 43%; */
+  top: 18%;
+  width: 32%;
+  left: 63%;
 }
-.lang-cn-l {
-  font-size: 7vw;
-  padding-top: 4.2vh;
+.menu-5 {
+  top: 31%;
+  width: 44%;
+  left: 52%;
 }
-.menu-en {
-  top: 56%;
+.menu-6 {
+  top: 44%;
+  width: 45%;
+  left: 51%;
 }
-.menu-de {
-  top: 36%;
+.menu-4 > span {
+  animation-delay: 100ms;
 }
-.menu-fr {
-  top: 46%;
+.menu-5 > span {
+  animation-delay: 200ms;
 }
-.menu-sc {
-  top: 26%;
-}
-.menu-tc {
-  top: 16%;
+.menu-6 > span {
+  animation-delay: 300ms;
 }
 .lang {
   font-family: 'Open Sans', sans-serif;
-  font-size: 2.5vw;
+  font-size: 1.8vw;
   font-weight: lighter;
   text-align: right;
-  left: 55%;
-  width: 39%;
-}
-.lang-cn-s {
-  letter-spacing: 0.1vw;
+  width: 7%;
+  top: 6%;
 }
 .lang > span {
   animation: slideDown .5s ease-in-out;
@@ -160,6 +158,28 @@ a {
     opacity: 1;
     transform: translateY(0%);
   }
+}
+.menu-en {
+  left: 61%;
+}
+.menu-de {
+  left: 67%;
+}
+.menu-fr {
+  left: 73%;
+}
+.menu-sc {
+  left: 79%;
+}
+.menu-tc {
+  left: 85%;
+}
+.lang-hero-text-l {
+  font-size: 7vw;
+  padding-top: 4.2vh;
+}
+.lang-lang {
+  letter-spacing: 0.1vw;
 }
 /* ---------- About me ---------- */
 #about-me {

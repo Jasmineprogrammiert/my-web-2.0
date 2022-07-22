@@ -1,14 +1,18 @@
 {
   "aboutMe": "Hello,",
   "myBlogs": "I am",
-  "Contact": "Jasmine",
+  "contact": "Jasmine",
   "aboutMe1": "About",
   "myBlogs1": "Blogs",
-  "Contact1": "Contact",
-  "Titles" : "Web Developer <br /> Marketing Undergrad <br /> Language Enthusiast",
+  "contact1": "Contact",
+  "titles": {
+    "title-1": "Web Developer",
+    "title-2": "Language Enthusiast",
+    "title-3": "Marketing Undergrad"
+  },
   "EN": "🇺🇸 En",
   "DE": "🇩🇪 De",
   "FR": "🇫🇷 Fr",
-  "SC": "🇨🇳 zh-CN",
-  "TC": "🇭🇰 zh-HK"
+  "SC": "🇨🇳 Sc",
+  "TC": "🇭🇰 Tc"
 }

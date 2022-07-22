@@ -5,8 +5,6 @@ import { useTranslation } from 'react-i18next';
 
 const Navigationbar = () => {
   const { t, i18n } = useTranslation(["navbar"]);
-
-
 	const handleLangChange = e => {
 		i18n.changeLanguage(e.target.id);
 	};
@@ -25,25 +23,16 @@ const Navigationbar = () => {
     setHeading1(`${t("myBlogs")}`);
   };
 
-  const originalHeading2 = `${t("Contact")}`;
-  const updatedHeading2 = `${t("Contact1")}`;
+  const originalHeading2 = `${t("contact")}`;
+  const updatedHeading2 = `${t("contact1")}`;
   const [heading2, setHeading2] = useState(originalHeading2);
   const handleHeading2 = () => {
-    setHeading2(`${t("Contact")}`);
+    setHeading2(`${t("contact")}`);
   };
-
-  // const [titles, setTitles] = useState("");
-  // const handleTitles = () => {
-  //   setTitiles(`${t("Titles")}`);
-  // };
-
-
-
-
 
   const [style, setStyle] = useState("");
   const handleStyleChange = () => {
-    setStyle("lang-cn-s");
+    setStyle("lang-lang");
   };
   const handleStyleChangeBack = () => {
     setStyle("lang");
@@ -51,7 +40,7 @@ const Navigationbar = () => {
 
   const [style1, setStyle1] = useState("");
   const handleStyleChange1 = () => {
-    setStyle1("lang-cn-l");
+    setStyle1("lang-hero-text-l");
   };
   const handleStyleChange1Back = () => {
     setStyle1("hero-text");
@@ -95,17 +84,15 @@ const Navigationbar = () => {
         {heading2}
       </span>
     </Nav.Link> 
-
-
-
-
-    {/* <h1 className="hero-text hero-text-l menu-4">
-      {t("Titles")}
-    </h1> */}
-    
-
-
-
+    <h1 className="hero-text hero-text-l titles menu-4">
+      <span>{t("titles.title-1")}</span>
+    </h1>
+    <h1 className="hero-text hero-text-l titles menu-5">
+      <span>{t("titles.title-2")}</span>
+    </h1>
+    <h1 className="hero-text hero-text-l titles menu-6">
+      <span>{t("titles.title-3")}</span>
+    </h1>
     <Link 
       to="/"
       className={`hero-text menu-en lang ${style}`}
