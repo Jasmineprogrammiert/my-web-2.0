@@ -1,17 +1,8 @@
 {
-  "aboutMe": "Bonjour,",
-  "myBlogs": "Je suis",
-  "contact": "Jasmin",
-  "aboutMe1": "À propos",
-  "myBlogs1": "Blogs",
-  "contact1": "Contact",
+  "arrow": "retour",
   "titles": {
     "title-1": "Je suis une <1>dévelop- <br />peuse full stack</1> & <1>étudiante en marketing</1>.",
     "title-2": "J'aime aussi les langues, <br /> la randonnée et l'histoire."
   },
-  "EN": "🇺🇸 En",
-  "DE": "🇩🇪 De",
-  "FR": "🇫🇷 Fr",
-  "SC": "🇨🇳 Cs",
-  "TC": "🇭🇰 Ct"
+  "self-intro": "blahblahblah - FR"
 }

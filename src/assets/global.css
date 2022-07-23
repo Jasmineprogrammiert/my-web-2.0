@@ -3,6 +3,7 @@
   2. Open Sans
 */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 /* ---------- General ---------- */
 html {
   -webkit-user-select: none;
@@ -20,7 +21,8 @@ html {
   color: white;
 }
 p, footer {
-  font-family: 'Georgia', sans-serif;
+  /* font-family: 'Georgia', sans-serif; */
+  font-family: 'Roboto', sans-serif;
   font-size: 1.5vw;
   text-align: justify;
 }
@@ -167,28 +169,20 @@ code {
 #about-me {
   background-color: rgb(28, 28, 28);
 }
-
-
-
-
 .arrow-back {
   position: absolute;
-  margin: 6vh 0 0 87vw;
-  width: 5%;
-  font-size: 2.5vw;
+  margin: 10vh 0 0 84vw;
+  width: 4.5%;
+  font-size: 2vw;
   text-decoration: none;
 }
 .arrow-back span:hover {
   color: yellow !important;
-  text-indent: 0.5em;
-  letter-spacing: 0.2vw;
+  text-indent: 0.1em;
+  letter-spacing: 0.1vw;
   text-transform: uppercase;
   transition: .5s ease-out;
 }
-
-
-
-
 .titles {
   position: absolute;
   left: 14%;
@@ -209,8 +203,15 @@ code {
   font-size: 4vw;
   font-weight: 100;
 }
+
+
+
+
 .about-me {
-  padding: 100vh 12vw 17vh 12vw;
+  padding: 100vh 14vw 17vh 14vw;
+}
+.about-me > h2 {
+  padding-bottom: 3vh;
 }
 .about-me p {
   margin-bottom: 4vh;
