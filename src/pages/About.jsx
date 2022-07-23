@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import Contact from '../components/Contact';
+// import Contact from '../components/Contact';
 
 const About = () => {
   const { t, i18n } = useTranslation(["about"]);
@@ -9,19 +9,25 @@ const About = () => {
   return (
     <>
     <main id="about-me" name="about-me">
-      <Link to="/">
-        <ArrowBackIosNewIcon to="/"></ArrowBackIosNewIcon>
+      <Link to="/" className="slideUp">
+        <span><ArrowBackIosNewIcon to="/" className="arrow-back" /></span>
       </Link>
 
-      {/* <h1 className="hero-text hero-text-l titles menu-4">
-      <span>{t("titles.title-1")}</span>
+      <h1 className="slideUp titles menu-4">
+        <span>
+          <Trans i18nKey="titles.title-1">
+            I'm a <code></code>
+          </Trans>
+        </span>
       </h1>
-      <h1 className="hero-text hero-text-l titles menu-5">
+      <h1 className="slideUp titles menu-5">
         <span>{t("titles.title-2")}</span>
       </h1>
-      <h1 className="hero-text hero-text-l titles menu-6">
-        <span>{t("titles.title-3")}</span>
-      </h1> */}
+
+
+
+
+
 
       <div className="about-me">
         <p>
@@ -47,7 +53,7 @@ const About = () => {
         </p>
       </div>
     </main>
-    <Contact />
+    {/* <Contact /> */}
     </>
   )
 }

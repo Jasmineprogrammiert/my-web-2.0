@@ -35,7 +35,7 @@ const Navigationbar = () => {
     <div href="top" className="hero-image"></div>
     <Link 
       to="/about" 
-      className={`hero-text hero-text-l menu-1`}
+      className={`hero-text slideUp menu-1`}
     >
       <span
          onMouseOver={() => setHeading(updatedHeading)}
@@ -48,7 +48,7 @@ const Navigationbar = () => {
       href="https://deinelieblingsjasmin.com" 
       target="_blank" 
       rel="noreferrer" 
-      className={`hero-text hero-text-l menu-2`}
+      className={`hero-text slideUp menu-2`}
     >
       <span
          onMouseOver={() => setHeading1(updatedHeading1)}
@@ -59,7 +59,7 @@ const Navigationbar = () => {
     </Nav.Link>
     <Link 
       to="/contact" 
-      className={`hero-text hero-text-l menu-3`}
+      className={`hero-text slideUp menu-3`}
     >
       <span
         onMouseOver={() => setHeading2(updatedHeading2)}

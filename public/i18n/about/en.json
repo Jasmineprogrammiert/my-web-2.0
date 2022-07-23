@@ -6,9 +6,8 @@
   "myBlogs1": "Blogs",
   "contact1": "Contact",
   "titles": {
-    "title-1": "Web Developer",
-    "title-2": "Language Enthusiast",
-    "title-3": "Marketing Undergrad"
+    "title-1": "I'm a <1>full-stack web developer</1> & <1>marketing undergrad</1>.",
+    "title-2": "And I love languages, hiking & history."
   },
   "EN": "🇺🇸 En",
   "DE": "🇩🇪 De",
