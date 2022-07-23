@@ -4,15 +4,21 @@ import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 // import Contact from '../components/Contact';
 
 const About = () => {
-  const { t, i18n } = useTranslation(["about"]);
+  const { t } = useTranslation(["about"]);
 
   return (
     <>
     <main id="about-me" name="about-me">
-      <Link to="/" className="slideUp">
-        <span><ArrowBackIosNewIcon to="/" className="arrow-back" /></span>
+      <Link to="/" className="slideUp arrow-container">
+        <span>
+          <ArrowBackIosNewIcon to="/" className="arrow-back" />
+        </span>
       </Link>
 
+
+
+
+      
       <h1 className="slideUp titles menu-4">
         <span>
           <Trans i18nKey="titles.title-1">
@@ -21,13 +27,12 @@ const About = () => {
         </span>
       </h1>
       <h1 className="slideUp titles menu-5">
-        <span>{t("titles.title-2")}</span>
+        <span>
+          <Trans i18nKey="titles.title-2">
+            Und <code></code>
+          </Trans>
+        </span>
       </h1>
-
-
-
-
-
 
       <div className="about-me">
         <p>

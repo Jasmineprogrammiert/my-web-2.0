@@ -28,8 +28,6 @@ a {
   color: inherit !important;
 }
 code {
-  /* color: #00FFFF; */
-  color: rgb(207, 8, 117);
   color: rgb(224, 4, 124);
 }
 /* ---------- Navbar ---------- */
@@ -167,55 +165,51 @@ code {
 }
 /* ---------- About ---------- */
 #about-me {
-  /* background-image: url('/src/assets/img/bg-01.jpg'); */
-  /* background-color: rgb(33, 33, 33); */
   background-color: rgb(28, 28, 28);
-  /* height: 100vh;
-  width: 100%;
-  background-blend-mode: multiply;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  background-attachment: fixed; */
+}
+.arrow-container > span {
+  width: 1px;
 }
 .arrow-back {
-  margin: 5vh 0 0 87vw;
+  margin: 9vh 0 0 87vw;
 }
+
+
+/* .arrow-back {
+  margin-left: 86vw;
+}
+.arrow-back span {
+  padding: 0 0 0 86vw;
+  width: 1px;
+} */
+
+
+
+
+
+
+
+
 .titles {
   position: absolute;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 8.5vw;
-  font-weight: bold;
-  width: 100%;
-  /* height: 100vh; */
-  /* text-indent: 0.5em;
-  letter-spacing: 0.2vw; */
+  left: 14%;
 }
 .titles > span {
-  font-size: 3.5vw;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 6.5vw;
+  font-weight: bold;
 }
 .menu-4 {
-  top: 18%;
-  width: 54%;
-  left: 13%;
+  top: 21%;
 }
 .menu-5 {
-  top: 43%;
-  left: 13%;
-}
-.menu-4 > span {
-  animation-delay: 100ms;
+  top: 67%;
 }
 .menu-5 > span {
-  animation-delay: 200ms;
-  font-size: 3vw;
+  animation-delay: 500ms;
+  font-size: 4vw;
   font-weight: 100;
 }
-
-
-
-
 .about-me {
   padding: 92vh 12vw 17vh 12vw;
 }
