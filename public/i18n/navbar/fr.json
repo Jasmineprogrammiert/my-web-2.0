@@ -1,18 +1,17 @@
 {
-  "aboutMe": "Bonjour,",
-  "myBlogs": "Je suis",
-  "contact": "Jasmin",
-  "aboutMe1": "À propos",
-  "myBlogs1": "Blogs",
-  "contact1": "Contact",
-  "titles": {
-    "title-1": "Développeuse Web",
-    "title-2": "Amoureuse des langues",
-    "title-3": "Marketing Undergrad"
+  "nav": {
+    "aboutMe": "Bonjour,",
+    "myBlogs": "Je suis",
+    "contact": "Jasmin",
+    "aboutMe1": "À propos",
+    "myBlogs1": "Blogs",
+    "contact1": "Contact"
   },
-  "EN": "🇺🇸 En",
-  "DE": "🇩🇪 De",
-  "FR": "🇫🇷 Fr",
-  "SC": "🇨🇳 Cs",
-  "TC": "🇭🇰 Ct"
+  "lang" : {
+    "EN": "🇺🇸 En",
+    "DE": "🇩🇪 De",
+    "FR": "🇫🇷 Fr",
+    "SC": "🇨🇳 Cs",
+    "TC": "🇭🇰 Ct"
+  }
 }

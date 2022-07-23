@@ -9,25 +9,25 @@ const Navigationbar = () => {
 		i18n.changeLanguage(e.target.id);
 	};
 
-  const originalHeading = `${t("aboutMe")}`;
-  const updatedHeading = `${t("aboutMe1")}`;
+  const originalHeading = `${t("nav.aboutMe")}`;
+  const updatedHeading = `${t("nav.aboutMe1")}`;
   const [heading, setHeading] = useState(originalHeading);
   const handleHeading = () => {
-    setHeading(`${t("aboutMe")}`);
+    setHeading(`${t("nav.aboutMe")}`);
   };
 
-  const originalHeading1 = `${t("myBlogs")}`;
-  const updatedHeading1 = `${t("myBlogs1")}`;
+  const originalHeading1 = `${t("nav.myBlogs")}`;
+  const updatedHeading1 = `${t("nav.myBlogs1")}`;
   const [heading1, setHeading1] = useState(originalHeading1);
   const handleHeading1 = () => {
-    setHeading1(`${t("myBlogs")}`);
+    setHeading1(`${t("nav.myBlogs")}`);
   };
 
-  const originalHeading2 = `${t("contact")}`;
-  const updatedHeading2 = `${t("contact1")}`;
+  const originalHeading2 = `${t("nav.contact")}`;
+  const updatedHeading2 = `${t("nav.contact1")}`;
   const [heading2, setHeading2] = useState(originalHeading2);
   const handleHeading2 = () => {
-    setHeading2(`${t("contact")}`);
+    setHeading2(`${t("nav.contact")}`);
   };
 
   return (
@@ -76,7 +76,7 @@ const Navigationbar = () => {
         handleHeading1(); 
         handleHeading2(); 
       }}>
-      <span id="en">{t("EN")}</span>
+      <span id="en">{t("lang.EN")}</span>
     </div>
     <div  
       className={`hero-text menu-de lang`}
@@ -86,7 +86,7 @@ const Navigationbar = () => {
         handleHeading1(); 
         handleHeading2(); 
       }}>
-     <span id="de">{t("DE")}</span>
+     <span id="de">{t("lang.DE")}</span>
     </div>
     <div
       className={`hero-text menu-fr lang`}
@@ -96,7 +96,7 @@ const Navigationbar = () => {
         handleHeading1(); 
         handleHeading2(); 
       }}>
-      <span id="fr">{t("FR")}</span>
+      <span id="fr">{t("lang.FR")}</span>
     </div>
     <div 
       className={`hero-text menu-sc lang`}
@@ -106,7 +106,7 @@ const Navigationbar = () => {
         handleHeading1(); 
         handleHeading2(); 
       }}>
-      <span id="sc">{t("SC")}</span>
+      <span id="sc">{t("lang.SC")}</span>
     </div>
     <div  
       className={`hero-text menu-tc lang`}
@@ -116,7 +116,7 @@ const Navigationbar = () => {
         handleHeading1(); 
         handleHeading2(); 
       }}>
-      <span id="tc">{t("TC")}</span>
+      <span id="tc">{t("lang.TC")}</span>
     </div>
     </>
   )

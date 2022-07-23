@@ -167,25 +167,24 @@ code {
 #about-me {
   background-color: rgb(28, 28, 28);
 }
-.arrow-container > span {
-  width: 1px;
-}
+
+
+
+
 .arrow-back {
-  margin: 9vh 0 0 87vw;
+  position: absolute;
+  margin: 6vh 0 0 87vw;
+  width: 5%;
+  font-size: 2.5vw;
+  text-decoration: none;
 }
-
-
-/* .arrow-back {
-  margin-left: 86vw;
+.arrow-back span:hover {
+  color: yellow !important;
+  text-indent: 0.5em;
+  letter-spacing: 0.2vw;
+  text-transform: uppercase;
+  transition: .5s ease-out;
 }
-.arrow-back span {
-  padding: 0 0 0 86vw;
-  width: 1px;
-} */
-
-
-
-
 
 
 
@@ -211,7 +210,7 @@ code {
   font-weight: 100;
 }
 .about-me {
-  padding: 92vh 12vw 17vh 12vw;
+  padding: 100vh 12vw 17vh 12vw;
 }
 .about-me p {
   margin-bottom: 4vh;
