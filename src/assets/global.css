@@ -1,9 +1,9 @@
 /* ---------- Google Fonts ---------- 
-  1. Source Sans Pro
-  2. Open Sans
+  1. Source Sans Pro - regular 400
+  2. Open Sans - light 300
+  3. Roboto - regular 400
 */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Source+Sans+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&family=Source+Sans+Pro&display=swap');
 /* ---------- General ---------- */
 html {
   -webkit-user-select: none;
@@ -21,7 +21,6 @@ html {
   color: white;
 }
 p, footer {
-  /* font-family: 'Georgia', sans-serif; */
   font-family: 'Roboto', sans-serif;
   font-size: 1.5vw;
   text-align: justify;
@@ -167,7 +166,8 @@ code {
 }
 /* ---------- About ---------- */
 #about-me {
-  background-color: rgb(28, 28, 28);
+  /* background-color: rgb(28, 28, 28); */
+  background-color: rgb(20, 20, 20);
 }
 .arrow-back {
   position: absolute;
@@ -203,12 +203,16 @@ code {
   font-size: 4vw;
   font-weight: 100;
 }
-
-
-
-
+.about-me-img {
+  position: relative;
+  float: left;
+  margin: 68vh -18vw 0 -5vw;
+  object-fit: cover;
+  width: 53%;
+  height: auto;
+}
 .about-me {
-  padding: 100vh 14vw 17vh 14vw;
+  padding: 100vh 13vw 17vh 10vw;
 }
 .about-me > h2 {
   padding-bottom: 3vh;
