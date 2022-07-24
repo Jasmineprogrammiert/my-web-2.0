@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { useTranslation, Trans } from 'react-i18next';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import jasmine from '../assets/img/jasmine.png';
-// import jasmine from '../assets/img/jasmine-00.jpg';
 // import Contact from '../components/Contact';
 
 const About = () => {
@@ -16,8 +15,6 @@ const About = () => {
   const originalHeading = <ArrowBackIosNewIcon />;
   const updatedHeading = `${t("arrow")}`;
   const [heading, setHeading] = useState(originalHeading);
-
-  
 
   return (
     <>
@@ -51,24 +48,20 @@ const About = () => {
         <h2>About Me</h2>
         {/* <h1>About Me</h1> */}
         <p>
-          Hello, my name is <i><strong>Jasmine Zeng</strong></i>. I'm a Hong-Kong-based web developer and marketing undergrad whose passions extend beyond to language learning, hiking, history, traveling and many more.
+          Hello, my name is <i><strong>Jasmine Zeng</strong></i>. I'm a Hong-Kong-based web developer and marketing undergrad with a passion for language learning, hiking, history, traveling and many more.
         </p>
         <p>
-          While visiting Hong Kong in 2018, I had a solo hike at the MacLehose Trail Stage 2. The beauty of nature there was so enchanting to me as I grew up in a city without much nature, which, among other factors, led to the thought that relocating to HK might be a great idea.
+          I had a solo hike at the MacLehose Trail Section 2 while visiting Hong Kong in 2018. The beauty of the nature there fully captivated me, which among other factors led to the decision to pursue a higher education in HK.
         </p>
         <p>
-          The following year, I moved to HK in pursuit of higher education and have become a avid hiker ever since. My hikes have provided me with many beautiful photos and experiences that I'd like to share. Originally, I posted them on Instagram, but the word limit made it difficult to put one post together, which sparked a bold idea to code my own hiking blog. Although I had no background in tech, I believe that anything is possible with action, consistency, and perseverance. I dived into web development in early 2022, and it was one of the best decisions I've ever made.
+          My stronghold in personal development drives my commitment to continual learning, so that I can contribute in a meaningful way to society. Marketing teaches exactly how by identifying people's needs and providing value through inspirational work and the use of technologies. And the joy of accomplishments is unneglectable. Therefore, I chose to major in marketing.
         </p>
         <p>
-          My stronghold in personal development drives my commitment to continual learning so that I can contribute in a meaningful way to society. Through identifying people's needs and providing value through inspirational work and the use of technologies, marketing teaches exactly how to do that. And the joy of accomplishments is unneglectable. That's why I choose to major in marketing. 
-        </p>
-        <p>My curiosity about the world drives me to ... ...</p>
-        {/* <p>
-          Furthermore, I am an avid language devotee. A language acts like a bridge that connects me to people and their cultures on a deeper level. For this reason, I find it extremely fascinating. Right now, I am actively learning German and French after being fluent in English and Cantonese. 
+          I've become a avid hiker upon moving to HK. My hikes have provided me with many beautiful photos and experiences that I'd like to share. Originally, I posted them on Instagram, but the word limit made it difficult to put one post together, which sparked a bold idea to code my own hiking blog. Although I had no background in tech, I believe that anything is possible with action, consistency, and perseverance. I dived into web development in early 2022, and it was one of the best decisions I've ever made.
         </p>
         <p>
-          Besides the above hobbies, I also enjoy hiking, visiting historical and art museums, and exploring local neighborhoods for their food and cultures. If you are intrigued by my discoveries, please visit my <a href="https://deinelieblingsjasmin.com" target="_blank">blog</a>. 
-        </p> */}
+          It is my endless curiosity about the world that drives me to explore different fields. Aside from being a web deveoper, marketing undergrad and hiker, I also identify myself as an enthusiast in language, history, traveling, piano and many other things. More about my skills, experience and education can be found on my resume and <a href="https://deinelieblingsjasmin.com" target="_blank">blog</a>.
+        </p>
       </div>
     </main>
     {/* <Contact /> */}
