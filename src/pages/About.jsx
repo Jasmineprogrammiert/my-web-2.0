@@ -16,8 +16,12 @@ const About = () => {
   const [arrow, setArrow] = useState(originalArrow);
 
   const originalLink = `${t("links.link-1")}`;
-  const updatedLink = `${t("links.link-1-1")}`;
+  const updatedLink = `${t("links.link-1-copy")}`;
   const [link, setLink] = useState(originalLink);
+
+
+
+
 
   return (
     <>
@@ -58,11 +62,13 @@ const About = () => {
         <p>{t("about.about-3")}</p>
         <p>{t("about.about-4")}</p>
         <p>{t("about.about-5")}</p>
+
+  
         <Nav.Link 
           href={résumé} 
           target="_blank" 
           rel="noreferrer"
-          className={`links link-1 classes.color`}>
+          className="links link-1">
           <span
             onMouseOver={() => setLink(updatedLink)}
             onMouseLeave={() => setLink(originalLink)}

@@ -4,11 +4,17 @@
     "title-1": "Je suis une <1>Dévelop- <br /> peuse Full Stack</1> & <1>Étudiante en Marketing</1>.",
     "title-2": "J'aime aussi les langues, <br /> la randonnée et l'histoire."
   },
+  "links": {
+    "link-1": "> Résumé",
+    "link-1-copy": "141ko pdf",
+    "link-2": "> Blog"
+  },
   "about": {
-    "about-1": "En cours ... <br /><br /> Hello, my name is <i><strong>Jasmine Zeng</strong></i>. I'm a Hong-Kong-based web developer and marketing undergrad with a passion for language learning, hiking, history, traveling and many more.",
-    "about-2": "I had a solo hike at the MacLehose Trail Section 2 while visiting Hong Kong in 2018. The beauty of the nature there fully captivated me, which among other factors led to the decision to pursue a higher education in HK.",
-    "about-3": "My stronghold in personal development drives my commitment to continual learning, so that I can contribute in a meaningful way to society. Marketing teaches exactly how by identifying people's needs and providing value through inspirational work and the use of technologies. And the joy of accomplishments is unneglectable. Therefore, I chose to major in marketing.",
-    "about-4": "I've become a avid hiker upon moving to HK. My hikes have provided me with many beautiful photos and experiences that I'd like to share. Originally, I posted them on Instagram, but the word limit made it difficult to put one post together, which sparked a bold idea to code my own hiking blog. Although I had no background in tech, I believe that anything is possible with action, consistency, and perseverance. I dived into web development in early 2022, and it was one of the best decisions I've ever made.",
-    "about-5": "It is my endless curiosity about the world that drives me to explore different fields. Aside from being a web deveoper, marketing undergrad and hiker, I also identify myself as an enthusiast in language, history, traveling, piano and many other things. More about my skills, experience and education can be found on my resume and blog."
+    "about-me": "À propos de moi",
+    "about-1": "Bonjour, je m’appelle <i><strong>Jasmin Zeng</strong></i>. Je suis une développeuse Web et une étudiante en marketing basé à Hong-Kong, passionnée par l’apprentissage des langues, la randonnée et l’histoire.",
+    "about-2": "J’ai fait une randonnée seule sur la section 2 du MacLehose Trail lors d’une visite à Hong Kong en 2018. La beauté de la nature m’a complètement captivé, ce qui, entre autres facteurs, a conduit à la décision de poursuivre le diplôme universitaire à HK.",
+    "about-3": "Ma croyance dans le développement personnel motive mon engagement sur l’apprentissage continu, afin que je puisse contribuer de manière significative à la société. Le marketing enseigne exactement comment en identifiant les besoins des gens et en apportant de la valeur par un travail inspirant et l’utilisation des technologies. Et la joie des réalisations est non négligeable. J’ai donc choisi de me spécialiser en marketing.",
+    "about-4": "Je suis devenue une randonneuse passionnée après avoir déménagé à HK. Mes randonnées m’ont fourni de nombreuses belles photos et expérience qui j’aimerais partager. Au départ, je les ai publiés sur Instagram, mais la limite de mots a rendu difficile la création d’un seul article, ce qui a suscité l’idée audacieuse de coder mon propre blog de randonnée. Bien que je n’aie aucune formation en technologie, je crois que tout est possible avec de l’action, de la constance et de la persévérance.  Je me suis lancée dans le développement Web au début de 2022, et ce fut l’une des meilleures décisions que j’ai jamais prises.",
+    "about-5": "C’est ma curiosité infinie pour le monde qui me pousse à explorer différents domaines. Mes intérêts incluent également les voyages, la photographie, le piano et bien d’autres choses. Vous trouverez plus d’informations sur mes compétences, mon expérience et ma formation sur mon CV et mon blog."
   }
 }
