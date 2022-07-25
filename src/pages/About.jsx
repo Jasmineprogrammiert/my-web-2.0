@@ -6,7 +6,7 @@ import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 // local files
 import jasmine from '../assets/img/jasmine.png';
 import résumé from '../assets/files/Jasmine_Zeng_CV.pdf'
-// import Contact from '../components/Contact';
+import Contact from '../components/Contact';
 
 const About = () => {
   const { t } = useTranslation(["about"]);
@@ -19,13 +19,10 @@ const About = () => {
   const updatedLink = `${t("links.link-1-copy")}`;
   const [link, setLink] = useState(originalLink);
 
-
-
-
-
   return (
     <>
     <main id="about-me" name="about-me">
+      {/* ---------- Headings ---------- */}
       <Link to="/" className="arrow-back slideUp">
         <span
           to="/" 
@@ -49,7 +46,7 @@ const About = () => {
           </Trans>
         </span>
       </h1>
-
+      {/* ---------- Self-intro ---------- */}
       <img src={jasmine} alt="Jasmine" className="about-me-img" />
       <div className="about-me">
         <h2>{t("about.about-me")}</h2>
@@ -62,8 +59,6 @@ const About = () => {
         <p>{t("about.about-3")}</p>
         <p>{t("about.about-4")}</p>
         <p>{t("about.about-5")}</p>
-
-  
         <Nav.Link 
           href={résumé} 
           target="_blank" 
@@ -87,7 +82,7 @@ const About = () => {
         </Nav.Link>
       </div>
     </main>
-    {/* <Contact /> */}
+    <Contact />
     </>
   )
 }
