@@ -1,20 +1,22 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation, Trans } from 'react-i18next';
+import Nav from 'react-bootstrap/Nav';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import jasmine from '../assets/img/jasmine.png';
+import résumé from '../assets/files/Jasmine_Zeng_CV.pdf'
 // import Contact from '../components/Contact';
 
 const About = () => {
   const { t } = useTranslation(["about"]);
-  // const { t, i18n } = useTranslation(["navbar"]);
-	// const handleLangChange = e => {
-	// 	i18n.changeLanguage(e.target.id);
-	// };
 
-  const originalHeading = <ArrowBackIosNewIcon />;
-  const updatedHeading = `${t("arrow")}`;
-  const [heading, setHeading] = useState(originalHeading);
+  const originalArrow = <ArrowBackIosNewIcon />;
+  const updatedArrow = `${t("arrow")}`;
+  const [arrow, setArrow] = useState(originalArrow);
+
+  const originalLink = `${t("links.link-1")}`;
+  const updatedLink = `${t("links.link-1-1")}`;
+  const [link, setLink] = useState(originalLink);
 
   return (
     <>
@@ -22,9 +24,10 @@ const About = () => {
       <Link to="/" className="arrow-back slideUp">
         <span
           to="/" 
-          onMouseOver={() => setHeading(updatedHeading)}
-          onMouseLeave={() => setHeading(originalHeading)}
-        > {heading}
+          onMouseOver={() => setArrow(updatedArrow)}
+          onMouseLeave={() => setArrow(originalArrow)}
+        > 
+          {arrow}
         </span>
       </Link>
       <h1 className="slideUp titles menu-4">
@@ -36,36 +39,43 @@ const About = () => {
       </h1>
       <h1 className="slideUp titles menu-5">
         <span>
-          <Trans i18nKey="titles.title-2">
-            Und <code></code>
-          </Trans>
+          {t("titles.title-2")}
         </span>
       </h1>
 
       <img src={jasmine} alt="Jasmine" className="about-me-img" />
-
       <div className="about-me">
         <h2>About Me</h2>
-        {/* <h1>About Me</h1> */}
-
         <p>
           <Trans i18nKey="about.about-1">
             <code></code>
           </Trans>
         </p>
-        <p>
-          {t("about.about-2")}
-        </p>
-        <p>
-          {t("about.about-3")}
-        </p>
-        <p>
-          {t("about.about-4")}
-        </p>
-        <p>
-          {/* <a href="https://deinelieblingsjasmin.com" target="_blank">blog</a>. */}
-          {t("about.about-5")}
-        </p>
+        <p>{t("about.about-2")}</p>
+        <p>{t("about.about-3")}</p>
+        <p>{t("about.about-4")}</p>
+        <p>{t("about.about-5")}</p>
+        <Nav.Link 
+          href={résumé} 
+          target="_blank" 
+          rel="noreferrer"
+          className={`links link-1 classes.color`}>
+          <span
+            onMouseOver={() => setLink(updatedLink)}
+            onMouseLeave={() => setLink(originalLink)}
+          >
+            {link}
+          </span>
+        </Nav.Link>
+        <Nav.Link 
+          href="https://deinelieblingsjasmin.com"  
+          target="_blank" 
+          rel="noreferrer"
+          className="links link-2">
+          <span> 
+            {t("links.link-2")}
+          </span>
+        </Nav.Link>
       </div>
     </main>
     {/* <Contact /> */}

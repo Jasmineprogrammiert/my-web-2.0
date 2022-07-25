@@ -12,15 +12,15 @@ import './assets/global.css';
 function App() {
   return (
     <>
-    <Router>
-      <Suspense fallback={<Spinner />}>
-        <Routes>
-          <Route path="/" element={<Navbar />} />
-          <Route path="about" element={<About />} />
-          <Route path="contact" element={<Contact />} />
-        </Routes>
-      </Suspense>
-    </Router>
+      <Router>
+        <Suspense fallback={<Spinner />}>
+          <Routes>
+            <Route path="/" element={<Navbar />} />
+            <Route path="about" element={<About />} />
+            <Route path="contact" element={<Contact />} />
+          </Routes>
+        </Suspense>
+      </Router>
     </>
   );
 }

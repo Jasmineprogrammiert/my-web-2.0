@@ -220,6 +220,28 @@ code {
 .about-me p {
   margin-bottom: 4vh;
 }
+.links {
+  position: absolute;
+  margin: 1vh 0 0 18.8vw;
+  font-size: 1.5vw;
+}
+.links span {
+  color: rgb(224, 4, 124);
+}
+.links span:hover {
+  color: yellow !important;
+  text-indent: 0.1em;
+  letter-spacing: 0.1vw;
+  transition: .5s ease-out;
+}
+.link-1 {
+  /* width: 11%; */
+  width: 13%;
+}
+.link-2 {
+  margin-top: 6vh;
+  width: 11%;
+}
 /* ---------- Contact ---------- */
 #contact {
   padding: 2vh 0 1.5vh 12vw;
