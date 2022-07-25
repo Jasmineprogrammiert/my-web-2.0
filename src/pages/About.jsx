@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation, Trans } from 'react-i18next';
 import Nav from 'react-bootstrap/Nav';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+// local files
 import jasmine from '../assets/img/jasmine.png';
 import résumé from '../assets/files/Jasmine_Zeng_CV.pdf'
 // import Contact from '../components/Contact';
@@ -36,16 +37,18 @@ const About = () => {
             I'm a <code></code>
           </Trans>
         </span>
-      </h1>
+      </h1> 
       <h1 className="slideUp titles menu-5">
         <span>
-          {t("titles.title-2")}
+          <Trans i18nKey="titles.title-2">
+            I'm a <code></code>
+          </Trans>
         </span>
       </h1>
 
       <img src={jasmine} alt="Jasmine" className="about-me-img" />
       <div className="about-me">
-        <h2>About Me</h2>
+        <h2>{t("about.about-me")}</h2>
         <p>
           <Trans i18nKey="about.about-1">
             <code></code>
