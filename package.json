@@ -1,6 +1,7 @@
 {
   "name": "my-website",
   "version": "0.1.0",
+  "homepage": "https://jasminezeng.com",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.3",

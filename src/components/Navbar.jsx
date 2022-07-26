@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 const Navigationbar = () => {
   const { t, i18n } = useTranslation(["navbar"]);
 	const handleLangChange = e => {
+    console.log(e.target.id);
 		i18n.changeLanguage(e.target.id);
 	};
 
@@ -78,7 +79,7 @@ const Navigationbar = () => {
       }}>
       <span id="en">{t("lang.EN")}</span>
     </div>
-    <div  
+    <div
       className={`hero-text menu-de lang`}
       onClick={e => {
         handleLangChange(e); 
