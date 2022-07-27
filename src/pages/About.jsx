@@ -22,7 +22,6 @@ const About = () => {
   return (
     <>
     <main id="about-me" name="about-me">
-      {/* ---------- Headings ---------- */}
       <Link to="/" className="arrow-back slideUp">
         <span
           to="/" 
@@ -46,7 +45,6 @@ const About = () => {
           </Trans>
         </span>
       </h1>
-      {/* ---------- Self-intro ---------- */}
       <img src={jasmine} alt="Jasmine" className="about-me-img" />
       <div className="about-me">
         <h2>{t("about.about-me")}</h2>
