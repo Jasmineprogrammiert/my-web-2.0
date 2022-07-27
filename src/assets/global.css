@@ -32,7 +32,7 @@ code {
   color: rgb(224, 4, 124);
 }
 /* ---------- Navbar ---------- */
-.hero-image {
+.bg-img {
   background-image: url('/src/assets/img/portrait-01.jpg');
   height: 100vh;
   width: 100%;
@@ -41,10 +41,10 @@ code {
   background-size: cover;
   position: relative;
   background-attachment: fixed;
-  animation: hero-img 1.15s cubic-bezier(.5, .6, .6, 1);
+  animation: bg-img 1.15s cubic-bezier(.5, .6, .6, 1);
   animation-fill-mode: backwards;
 }
-@keyframes hero-img {
+@keyframes bg-img {
   0% {
     opacity: 0;
     transform: scale(1.1);
@@ -100,15 +100,15 @@ code {
   padding-left: 13vw;
 }
 .menu-1 {
-  top: 8%;
+  top: 9%;
   width: 47%;
 }
 .menu-2 {
-  top: 37%;
+  top: 38%;
   width: 39%;
 }
 .menu-3 {
-  top: 66%;
+  top: 67%;
   width: 43%;
 }
 .lang {
@@ -167,7 +167,7 @@ code {
 /* ---------- About ---------- */
 #about-me {
   background-color: rgb(20, 20, 20);
-  height: 245vh;
+  height: 240vh;
 }
 .arrow-back {
   position: absolute;
@@ -240,17 +240,19 @@ code {
 }
 /* ---------- Contact ---------- */
 #contact {
-  padding: 0vh 0 5vh 12vw;
+  padding: 0vh 0 4vh 12vw;
   background-color: rgb(20, 20, 20);
 }
 .icons {
   font-size: 4vw !important;
   margin: 0 .5vw .5vh 0;
 }
+.icon {
+  font-size: 2vw !important;
+}
 footer {
   font-size: 1.4vw;
 }
 footer > a {
-  text-decoration: none;
-  margin-left: 37.4vw;
+  margin-left: 45vw;
 }
