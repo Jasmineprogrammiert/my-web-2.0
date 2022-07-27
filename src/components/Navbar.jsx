@@ -6,7 +6,6 @@ import { useTranslation } from 'react-i18next';
 const Navigationbar = () => {
   const { t, i18n } = useTranslation(["navbar"]);
 	const handleLangChange = e => {
-    console.log(e.target.id);
 		i18n.changeLanguage(e.target.id);
 	};
 
