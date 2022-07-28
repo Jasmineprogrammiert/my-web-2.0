@@ -1,3 +1,8 @@
 {
-  "contact": "Copyright \u00A9 2022 曾子欣。保留一切权利。"
+  "contact": "Copyright \u00A9 2022 曾子欣。保留一切权利。",
+  "arrow": "返回",
+  "msg": {
+    "msg-1": "更新中... ",
+    "msg-2": "请耐心等候!"
+  }
 }

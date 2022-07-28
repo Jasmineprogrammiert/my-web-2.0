@@ -1,3 +1,8 @@
 {
-  "contact": "Copyright \u00A9 2022 Jasmine Zeng. All rights reserved."
+  "contact": "Copyright \u00A9 2022 Jasmine Zeng. All rights reserved.",
+  "arrow": "back",
+  "msg": {
+    "msg-1": "On progress...",
+    "msg-2": "Please stay by!"
+  }
 }

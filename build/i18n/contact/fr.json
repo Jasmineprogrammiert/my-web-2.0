@@ -1,3 +1,8 @@
 {
-  "contact": "Copyright \u00A9 2022 Jasmin Zeng. Tous droits réservés."
+  "contact": "Copyright \u00A9 2022 Jasmin Zeng. Tous droits réservés.",
+  "arrow": "retour",
+  "msg": {
+    "msg-1": "En cours ...",
+    "msg-2": "Restez près !"
+  }
 }
