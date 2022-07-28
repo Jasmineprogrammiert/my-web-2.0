@@ -167,7 +167,7 @@ code {
 /* ---------- About ---------- */
 #about-me {
   background-color: rgb(20, 20, 20);
-  height: 240vh;
+  height: 245vh;
 }
 .arrow-back {
   position: absolute;
@@ -240,7 +240,7 @@ code {
 }
 /* ---------- Contact ---------- */
 #contact {
-  padding: 0vh 0 4vh 12vw;
+  padding: 0 0 4vh 12vw;
   background-color: rgb(20, 20, 20);
 }
 .icons {
@@ -255,4 +255,15 @@ footer {
 }
 footer > a {
   margin-left: 45vw;
+}
+/* On Progress */
+.on-progress-bg {
+  background-color: rgb(20, 20, 20);
+  height: 100vh;
+}
+.on-progress-bg h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 8vw;
+  text-align: center;
+  padding: 30vh 0 0 0vw;
 }
