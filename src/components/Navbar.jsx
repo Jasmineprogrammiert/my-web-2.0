@@ -30,6 +30,8 @@ const Navigationbar = () => {
     setHeading2(`${t("nav.contact")}`);
   };
 
+  const [isOriginal, setIsOriginal] = useState(true);
+
   return (
     <>
     <div href="top" className="bg-img"></div>
@@ -117,6 +119,25 @@ const Navigationbar = () => {
         handleHeading2(); 
       }}>
       <span id="tc">{t("lang.TC")}</span>
+    </div>
+    <div  
+      className="tap-indication"
+      onClick={() => {
+        if(isOriginal) {
+          setHeading(updatedHeading);
+          setHeading1(updatedHeading1);
+          setHeading2(updatedHeading2);
+          setIsOriginal(false)
+        } else if(!isOriginal) {
+          setHeading(originalHeading);
+          setHeading1(originalHeading1);
+          setHeading2(originalHeading2);
+          setIsOriginal(true)
+        }
+      }}>
+      <span>
+        {t("tap-indication")}
+      </span>
     </div>
     </>
   )
