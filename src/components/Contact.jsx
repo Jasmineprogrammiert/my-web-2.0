@@ -23,10 +23,10 @@ const Contact = () => {
       <small>
         {t("contact")}
       </small>
-      <a href="#top">
-        <KeyboardDoubleArrowUpIcon className="icon" />
-      </a>
     </footer>
+    <a href="#top">
+      <KeyboardDoubleArrowUpIcon className="icon" />
+    </a>
   </div>
   </>
   )

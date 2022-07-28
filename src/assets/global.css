@@ -253,12 +253,12 @@ code {
 }
 .icon {
   font-size: 2vw !important;
+  /* margin-left: 10vw; */
+  margin: -7.7vh 0 0 74vw;
 }
 footer {
   font-size: 1.4vw;
-}
-footer > a {
-  margin-left: 45vw;
+  width: 50%;
 }
 /* ---------- On Progress ---------- */
 .on-progress-bg {
@@ -269,69 +269,5 @@ footer > a {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 8vw;
   text-align: center;
-  padding: 30vh 0 0 0vw;
-}
-/* ---------- Mobile ---------- */
-/* my iPhone width 390px */
-@media (orientation: portrait), (max-width: 709px) {
-  .hero-text {
-    font-size: 15vw;
-    left: -2.5%;
-  }
-  .hero-text span:hover {
-    text-indent: 0.3em;
-  }
-  .menu-1 {
-    /* top -2 ~ 92 */
-    top: 22%;
-    width: 69%;
-  }
-  .menu-2 {
-    top: 43.5%;
-    width: 60%;
-  }
-  .menu-3 {
-    top: 65%;
-    width: 58%;
-  }
-  .lang {
-    font-size: 4.8vw;
-    left: 81%;
-    width: 15vw;
-    text-align: left;
-  }
-  .menu-en {
-    top: 10%;
-  }
-  .menu-de {
-    top: 14.5%;
-  }
-  .menu-fr {
-    top: 19.5%;
-  }
-  .menu-sc {
-    top: 24.5%;
-  }
-  .menu-tc {
-    top: 29.5%;
-  }
-  .tap-indication {
-    font-size: 0.8em;
-    font-size: 3.8vmin;
-    position: fixed;
-    text-align: center;
-    width: 100%;
-    bottom: 4%;
-    animation: bounce .5s cubic-bezier(.5, .6, .6, 1) infinite alternate;
-    cursor: pointer;
-    display: block;
-  }
-  @keyframes bounce {
-    0% {
-      transform: translateY(0px);
-    }
-    100% {
-      transform: translateY(-8px);
-    }
-  }
+  padding: 30vh 0 0 0;
 }

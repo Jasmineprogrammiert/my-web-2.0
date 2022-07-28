@@ -41,7 +41,7 @@ const About = () => {
       <h1 className="slideUp titles menu-5">
         <span>
           <Trans i18nKey="titles.title-2">
-            I'm a <code></code>
+            I also <code></code>
           </Trans>
         </span>
       </h1>

@@ -9,6 +9,7 @@ import OnProgress from './pages/OnProgress';
 import { Spinner } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/global.css';
+import './assets/media.css';
 
 function App() {
   return (
