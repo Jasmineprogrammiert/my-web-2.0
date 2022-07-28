@@ -114,7 +114,6 @@
   }
   .icons {
     font-size: 11vw !important;
-    /* margin: 0 1.5vw .2vh 1.5vw; */
   }
   .icon {
     font-size: 5vw !important;
@@ -127,7 +126,6 @@
   /* ---------- On Progress ---------- */
   .on-progress-bg h1 {
     font-size: 12.5vw;
-    /* text-align: center; */
     padding: 40vh 0 0 0;
   }
 }
