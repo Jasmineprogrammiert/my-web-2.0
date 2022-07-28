@@ -21,11 +21,13 @@
   }
   .menu-2 {
     top: 43.5%;
-    width: 60%;
+    /* width: 60%; */
+    width: 80%;
   }
   .menu-3 {
     top: 65%;
-    width: 58%;
+    /* width: 58%; */
+    width: 75%;
   }
   .lang {
     font-size: 4vw;
@@ -86,7 +88,7 @@
     top: 23%;
   }
   .menu-5 {
-    top: 63%;
+    top: 65%;
     margin-top: 6vh;
   }
   .menu-5 > span {
