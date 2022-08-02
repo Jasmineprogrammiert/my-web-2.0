@@ -4,7 +4,7 @@ import { useTranslation, Trans } from 'react-i18next';
 import Nav from 'react-bootstrap/Nav';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 // local files
-import jasmine from '../assets/img/jasmine.png';
+import jasmine from '../assets/img/jasmine-01.png';
 import résumé from '../assets/files/Jasmine_Zeng_CV.pdf'
 import Contact from '../components/Contact';
 

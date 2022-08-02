@@ -14,15 +14,15 @@ import './assets/media.css';
 function App() {
   return (
     <>
-      <Router>
-        <Suspense fallback={<Spinner />}>
-          <Routes>
-            <Route path="/" element={<Navbar />} />
-            <Route path="about" element={<About />} />
-            <Route path="contact" element={<OnProgress />} />
-          </Routes>
-        </Suspense>
-      </Router>
+    <Router>
+      <Suspense fallback={<Spinner />}>
+        <Routes>
+          <Route path="/" element={<Navbar />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<OnProgress />} />
+        </Routes>
+      </Suspense>
+    </Router>
     </>
   );
 }

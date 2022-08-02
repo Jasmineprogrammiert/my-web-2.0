@@ -34,7 +34,7 @@ const Navigationbar = () => {
 
   return (
     <>
-    <div href="top" className="bg-img"></div>
+    <div href="top" className="bg-img" />
     <Link 
       to="/about" 
       className={`hero-text slideUp menu-1`}
