@@ -25,13 +25,10 @@ p, footer {
   font-size: 1.5vw;
   text-align: justify;
 }
-a {
-  color: inherit !important;
-}
 code {
   color: rgb(224, 4, 124);
 }
-/* ---------- Navbar ---------- */
+/* ---------- Home ---------- */
 .bg-img {
   background-image: url('/src/assets/img/portrait-01.jpg');
   height: 100vh;
@@ -64,7 +61,7 @@ code {
   text-decoration: none;
 }
 .hero-text span:hover {
-  color: yellow !important;
+  color: yellow;
   text-indent: 0.5em;
   letter-spacing: 0.2vw;
   text-transform: uppercase;
@@ -181,7 +178,7 @@ code {
   text-decoration: none;
 }
 .arrow-back span:hover {
-  color: yellow !important;
+  color: yellow;
   text-indent: 0.1em;
   letter-spacing: 0.1vw;
   text-transform: uppercase;
@@ -234,7 +231,7 @@ code {
   color: rgb(224, 4, 124);
 }
 .links span:hover {
-  color: yellow !important;
+  color: yellow;
   text-indent: 0.1em;
   letter-spacing: 0.1vw;
   transition: .5s ease-out;
@@ -247,12 +244,12 @@ code {
   padding: 9vh 0 5.5vh 12vw;
   background-color: rgb(20, 20, 20);
 }
-.icons {
-  font-size: 4vw !important;
+#icons {
+  font-size: 4vw;
   margin: 0 .5vw .5vh 0;
 }
-.icon {
-  font-size: 2vw !important;
+#icon {
+  font-size: 2vw;
   margin: -7.7vh 0 0 74vw;
 }
 footer {

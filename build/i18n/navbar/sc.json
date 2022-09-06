@@ -1,10 +1,10 @@
 {
   "nav": {
     "aboutMe": "您好，",
-    "myBlogs": "我是",
+    "myBlog": "我是",
     "contact": "曾子欣",
     "aboutMe1": "简介",
-    "myBlogs1": "博客",
+    "myBlog1": "博客",
     "contact1": "联系"
   },
   "lang" : {

@@ -11,13 +11,13 @@ const Contact = () => {
   <>
   <div id="contact">
     <a href="mailto:jasminezeng08@gmail.com" id="email-me">
-      <EmailIcon className="icons" />
+      <EmailIcon id="icons" />
     </a> 
     <a href="https://www.linkedin.com/in/jasminzeng/" target="_blank">
-      <LinkedInIcon className="icons" />
+      <LinkedInIcon id="icons" />
     </a>
     <a href="https://github.com/Jasmineprogrammiert" target="_blank">
-      <GitHubIcon className="icons" />
+      <GitHubIcon id="icons" />
     </a>
     <footer>
       <small>
@@ -25,7 +25,7 @@ const Contact = () => {
       </small>
     </footer>
     <a href="#top">
-      <KeyboardDoubleArrowUpIcon className="icon" />
+      <KeyboardDoubleArrowUpIcon id="icon" />
     </a>
   </div>
   </>

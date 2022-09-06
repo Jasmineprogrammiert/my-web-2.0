@@ -1,8 +1,11 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation, Trans } from 'react-i18next';
+// styles
+import AOS from 'aos';
 import Nav from 'react-bootstrap/Nav';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import BackToTop from 'react-back-to-top-button';
 // local files
 import jasmine from '../assets/img/jasmine-01.png';
 import résumé from '../assets/files/Jasmine_Zeng_CV.pdf'
@@ -18,6 +21,22 @@ const About = () => {
   const originalLink = `${t("links.link-1")}`;
   const updatedLink = `${t("links.link-1-copy")}`;
   const [link, setLink] = useState(originalLink);
+
+  useEffect(() => {    
+    AOS.init({
+      offset: 0,
+      delay: 300,
+      duration: 1800
+    });
+    window.addEventListener('load', function() {
+      AOS.refresh();
+    });
+    window.addEventListener('DOMContentLoaded', function() {
+      setTimeout(function() { 
+        AOS.refresh(); 
+      }, 500);
+    });
+  });
 
   return (
     <>
@@ -46,7 +65,11 @@ const About = () => {
         </span>
       </h1>
       <img src={jasmine} alt="Jasmine" className="about-me-img" />
-      <div className="about-me">
+      <div 
+        className="about-me"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+      >
         <h2>{t("about.about-me")}</h2>
         <p>
           <Trans i18nKey="about.about-1">
@@ -81,6 +104,14 @@ const About = () => {
       </div>
     </main>
     <Contact />
+    <BackToTop
+        showOnScrollDown
+        showAt={100}
+        speed={1500}
+        easing="easeInOutQuint"
+      >
+        <span>scroll up</span>
+    </BackToTop>
     </>
   )
 }

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const Navigationbar = () => {
-  const { t, i18n } = useTranslation(["navbar"]);
+  const { t, i18n } = useTranslation(["home"]);
 	const handleLangChange = e => {
 		i18n.changeLanguage(e.target.id);
 	};
@@ -16,11 +16,11 @@ const Navigationbar = () => {
     setHeading(`${t("nav.aboutMe")}`);
   };
 
-  const originalHeading1 = `${t("nav.myBlogs")}`;
-  const updatedHeading1 = `${t("nav.myBlogs1")}`;
+  const originalHeading1 = `${t("nav.myBlog")}`;
+  const updatedHeading1 = `${t("nav.myBlog1")}`;
   const [heading1, setHeading1] = useState(originalHeading1);
   const handleHeading1 = () => {
-    setHeading1(`${t("nav.myBlogs")}`);
+    setHeading1(`${t("nav.myBlog")}`);
   };
 
   const originalHeading2 = `${t("nav.contact")}`;

@@ -6,10 +6,10 @@
   footer {
     font-size: 4vw;
   }
-  /* ---------- Navbar ---------- */
+  /* ---------- Home ---------- */
   .hero-text {
-    font-size: 15vw;
-    left: -2.5%;
+    font-size: 16vw;
+    left: -2%;
   }
   .hero-text span:hover {
     text-indent: 0.3em;
@@ -30,7 +30,7 @@
     width: 75%;
   }
   .lang {
-    font-size: 4vw;
+    font-size: 5vw;
     left: 81%;
     width: 15vw;
     text-align: left;
@@ -39,19 +39,19 @@
     top: 10%;
   }
   .menu-de {
-    top: 14.5%;
+    top: 15.5%;
   }
   .menu-fr {
-    top: 19.5%;
+    top: 20.5%;
   }
   .menu-sc {
-    top: 24.5%;
+    top: 25.5%;
   }
   .menu-tc {
-    top: 29.5%;
+    top: 30.5%;
   }
   .tap-indication {
-    font-size: 4vmin;
+    font-size: 5.8vmin;
     position: fixed;
     text-align: center;
     width: 100%;
@@ -70,7 +70,7 @@
   }
   /* ---------- About ---------- */
   .arrow-back {
-    margin: 10vh 0 0 83vw;
+    margin: 10vh 0 0 86vw;
     font-size: 5vw;
     width: 11%;
   }
@@ -118,11 +118,11 @@
     padding: 0vh 0 3vh 0;
     text-align: center;
   }
-  .icons {
-    font-size: 11vw !important;
+  #icons {
+    font-size: 11vw;
   }
-  .icon {
-    font-size: 5vw !important;
+  #icon {
+    font-size: 6vw;
     margin: 1vh 0 -1vh 0;
   }
   footer {

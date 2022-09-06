@@ -1,10 +1,10 @@
 {
   "nav": {
     "aboutMe": "Bonjour,",
-    "myBlogs": "Je suis",
+    "myBlog": "Je suis",
     "contact": "Jasmin",
     "aboutMe1": "À propos",
-    "myBlogs1": "Blog",
+    "myBlog1": "Blog",
     "contact1": "Contact"
   },
   "lang" : {
