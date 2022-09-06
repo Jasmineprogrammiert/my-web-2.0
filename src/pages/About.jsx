@@ -5,7 +5,6 @@ import { useTranslation, Trans } from 'react-i18next';
 import AOS from 'aos';
 import Nav from 'react-bootstrap/Nav';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import BackToTop from 'react-back-to-top-button';
 // local files
 import jasmine from '../assets/img/jasmine-01.png';
 import résumé from '../assets/files/Jasmine_Zeng_CV.pdf'
@@ -105,7 +104,6 @@ const About = () => {
       </div>
     </main>
     <Contact />
-    {/* <BackToTopp /> */}
     </>
   )
 }
