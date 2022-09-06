@@ -1,8 +1,9 @@
+import { useTranslation } from 'react-i18next';
+// styles
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
-import { useTranslation } from 'react-i18next';
+import BackToTopp from './BackToTop';
 
 const Contact = () => {
   const { t } = useTranslation(["contact"]);
@@ -24,10 +25,8 @@ const Contact = () => {
         {t("contact")}
       </small>
     </footer>
-    <a href="#top">
-      <KeyboardDoubleArrowUpIcon id="icon" />
-    </a>
   </div>
+  <BackToTopp />
   </>
   )
 }

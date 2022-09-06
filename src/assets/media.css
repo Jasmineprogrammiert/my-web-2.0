@@ -129,6 +129,13 @@
     width: 90%;
     padding-left: 8.5vw;
   }
+  /* ---------- BackToTop ---------- */
+  #backtoTop-container {
+    margin-bottom: 3vh;
+  }
+  #backtoTop {
+    font-size: 7vw;
+  }
   /* ---------- On Progress ---------- */
   .on-progress-bg h1 {
     font-size: 12.5vw;

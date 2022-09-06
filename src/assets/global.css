@@ -256,6 +256,14 @@ footer {
   font-size: 1.4vw;
   width: 50%;
 }
+/* ---------- BackToTop ---------- */
+#backtoTop-container {
+  background-color: rgb(224, 4, 124);;
+  z-index: 100;
+}
+#backtoTop {
+  font-size: 2.5vw;
+}
 /* ---------- On Progress ---------- */
 .on-progress-bg {
   background-color: rgb(20, 20, 20);
