@@ -10,27 +10,26 @@ const Navigationbar = () => {
 	};
 
   const originalHeading = `${t("nav.aboutMe")}`;
+  const originalHeading1 = `${t("nav.myBlog")}`;
+  const originalHeading2 = `${t("nav.contact")}`;
   const updatedHeading = `${t("nav.aboutMe1")}`;
+  const updatedHeading1 = `${t("nav.myBlog1")}`;
+  const updatedHeading2 = `${t("nav.contact1")}`;
+
   const [heading, setHeading] = useState(originalHeading);
+  const [heading1, setHeading1] = useState(originalHeading1);
+  const [heading2, setHeading2] = useState(originalHeading2);
+  const [isOriginal, setIsOriginal] = useState(true);
+
   const handleHeading = () => {
     setHeading(`${t("nav.aboutMe")}`);
   };
-
-  const originalHeading1 = `${t("nav.myBlog")}`;
-  const updatedHeading1 = `${t("nav.myBlog1")}`;
-  const [heading1, setHeading1] = useState(originalHeading1);
   const handleHeading1 = () => {
     setHeading1(`${t("nav.myBlog")}`);
   };
-
-  const originalHeading2 = `${t("nav.contact")}`;
-  const updatedHeading2 = `${t("nav.contact1")}`;
-  const [heading2, setHeading2] = useState(originalHeading2);
   const handleHeading2 = () => {
     setHeading2(`${t("nav.contact")}`);
   };
-
-  const [isOriginal, setIsOriginal] = useState(true);
 
   return (
     <>
