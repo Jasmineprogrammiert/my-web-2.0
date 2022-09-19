@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -21,15 +21,23 @@ const Navigationbar = () => {
   const [heading2, setHeading2] = useState(originalHeading2);
   const [isOriginal, setIsOriginal] = useState(true);
 
-  const handleHeading = () => {
+  const handleHeadings = () => {
     setHeading(`${t("nav.aboutMe")}`);
-  };
-  const handleHeading1 = () => {
     setHeading1(`${t("nav.myBlog")}`);
-  };
-  const handleHeading2 = () => {
     setHeading2(`${t("nav.contact")}`);
-  };
+  }
+  const handleMobileHeadings1 = () => {
+    setHeading(updatedHeading);
+    setHeading1(updatedHeading1);
+    setHeading2(updatedHeading2);
+    setIsOriginal(false)
+  }
+  const handleMobileHeadings2 = () => {
+    setHeading(originalHeading);
+    setHeading1(originalHeading1);
+    setHeading2(originalHeading2);
+    setIsOriginal(true)
+  }
 
   return (
     <>
@@ -73,9 +81,7 @@ const Navigationbar = () => {
       className={`hero-text menu-en lang`}
       onClick={e => {
         handleLangChange(e); 
-        handleHeading(); 
-        handleHeading1(); 
-        handleHeading2(); 
+        handleHeadings();
       }}>
       <span id="en">{t("lang.EN")}</span>
     </div>
@@ -83,9 +89,7 @@ const Navigationbar = () => {
       className={`hero-text menu-de lang`}
       onClick={e => {
         handleLangChange(e); 
-        handleHeading(); 
-        handleHeading1(); 
-        handleHeading2(); 
+        handleHeadings();
       }}>
      <span id="de">{t("lang.DE")}</span>
     </div>
@@ -93,9 +97,7 @@ const Navigationbar = () => {
       className={`hero-text menu-fr lang`}
       onClick={e => {
         handleLangChange(e); 
-        handleHeading(); 
-        handleHeading1(); 
-        handleHeading2(); 
+        handleHeadings();
       }}>
       <span id="fr">{t("lang.FR")}</span>
     </div>
@@ -103,9 +105,7 @@ const Navigationbar = () => {
       className={`hero-text menu-sc lang`}
       onClick={e => {
         handleLangChange(e); 
-        handleHeading(); 
-        handleHeading1(); 
-        handleHeading2(); 
+        handleHeadings();
       }}>
       <span id="sc">{t("lang.SC")}</span>
     </div>
@@ -113,27 +113,15 @@ const Navigationbar = () => {
       className={`hero-text menu-tc lang`}
       onClick={e => {
         handleLangChange(e); 
-        handleHeading(); 
-        handleHeading1(); 
-        handleHeading2(); 
+        handleHeadings();
       }}>
       <span id="tc">{t("lang.TC")}</span>
     </div>
     <div  
       className="tap-indication"
-      onClick={() => {
-        if(isOriginal) {
-          setHeading(updatedHeading);
-          setHeading1(updatedHeading1);
-          setHeading2(updatedHeading2);
-          setIsOriginal(false)
-        } else if(!isOriginal) {
-          setHeading(originalHeading);
-          setHeading1(originalHeading1);
-          setHeading2(originalHeading2);
-          setIsOriginal(true)
-        }
-      }}>
+      onClick={() => { 
+        isOriginal ? handleMobileHeadings1() : handleMobileHeadings2()
+    }}>
       <span>
         {t("tap-indication")}
       </span>
