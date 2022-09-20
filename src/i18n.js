@@ -13,7 +13,7 @@ i18n
     backend: {
       loadPath: "/i18n/{{ns}}/{{lng}}.json",
     },
-    ns: ["about", "contact", "home"],
+    ns: ["about", "work", "home"],
     
     interpolation: {
       escapeValue: false,

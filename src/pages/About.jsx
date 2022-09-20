@@ -78,26 +78,16 @@ const About = () => {
         <p>{t("about.about-2")}</p>
         <p>{t("about.about-3")}</p>
         <p>{t("about.about-4")}</p>
-        <p>{t("about.about-5")}</p>
         <Nav.Link 
           href={résumé} 
           target="_blank" 
           rel="noreferrer"
-          className="links link-1">
+          className="links">
           <span
             onMouseOver={() => setLink(updatedLink)}
             onMouseLeave={() => setLink(originalLink)}
           >
             {link}
-          </span>
-        </Nav.Link>
-        <Nav.Link 
-          href="https://deinelieblingsjasmin.com"  
-          target="_blank" 
-          rel="noreferrer"
-          className="links link-2">
-          <span> 
-            {t("links.link-2")}
           </span>
         </Nav.Link>
       </div>

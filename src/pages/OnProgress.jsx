@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 
 const OnProgress = () => {
-  const { t } = useTranslation(["contact"]);
+  const { t } = useTranslation(["work"]);
 
   const originalArrow = <ArrowBackIosNewIcon />;
   const updatedArrow = `${t("arrow")}`;

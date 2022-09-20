@@ -99,7 +99,7 @@ code {
 .menu-1 {
   /* top -6 ~ 84 */
   top: 11%;
-  width: 47%;
+  width: 56%;
 }
 .menu-2 {
   top: 38%;
@@ -176,6 +176,7 @@ code {
   width: 4.8%;
   font-size: 2vw;
   text-decoration: none;
+  z-index: 100;
 }
 .arrow-back span:hover {
   color: yellow;
@@ -194,14 +195,14 @@ code {
   font-weight: bold;
 }
 .menu-4 {
-  top: 21%;
+  top: 24%;
 }
 .menu-5 {
   top: 67%;
 }
 .menu-5 > span {
   animation-delay: 500ms;
-  font-size: 4vw;
+  font-size: 3.5vw;
   font-weight: 100;
 }
 .about-me-img {
@@ -235,9 +236,6 @@ code {
   text-indent: 0.1em;
   letter-spacing: 0.1vw;
   transition: .5s ease-out;
-}
-.link-2 {
-  margin-top: 6vh;
 }
 /* ---------- Contact ---------- */
 #contact {

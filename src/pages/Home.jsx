@@ -67,7 +67,7 @@ const Navigationbar = () => {
       </span>
     </Nav.Link>
     <Link 
-      to="/contact" 
+      to="/work" 
       className={`hero-text slideUp menu-3`}
     >
       <span
@@ -80,41 +80,56 @@ const Navigationbar = () => {
     <div
       className={`hero-text menu-en lang`}
       onClick={e => {
-        handleLangChange(e); 
-        handleHeadings();
-      }}>
+        handleLangChange(e);
+        setTimeout(() => {
+          handleHeadings();
+        }, 100);
+      }}
+    >
       <span id="en">{t("lang.EN")}</span>
     </div>
     <div
       className={`hero-text menu-de lang`}
       onClick={e => {
-        handleLangChange(e); 
-        handleHeadings();
-      }}>
+        handleLangChange(e);
+        setTimeout(() => {
+          handleHeadings();
+        }, 100);
+      }}
+    >
      <span id="de">{t("lang.DE")}</span>
     </div>
     <div
       className={`hero-text menu-fr lang`}
       onClick={e => {
-        handleLangChange(e); 
-        handleHeadings();
-      }}>
+        handleLangChange(e);
+        setTimeout(() => {
+          handleHeadings();
+        }, 100);
+      }}
+    >
       <span id="fr">{t("lang.FR")}</span>
     </div>
     <div 
       className={`hero-text menu-sc lang`}
       onClick={e => {
-        handleLangChange(e); 
-        handleHeadings();
-      }}>
+        handleLangChange(e);
+        setTimeout(() => {
+          handleHeadings();
+        }, 100);
+      }}
+    >
       <span id="sc">{t("lang.SC")}</span>
     </div>
     <div  
       className={`hero-text menu-tc lang`}
       onClick={e => {
-        handleLangChange(e); 
-        handleHeadings();
-      }}>
+        handleLangChange(e);
+        setTimeout(() => {
+          handleHeadings();
+        }, 100);
+      }}
+    >
       <span id="tc">{t("lang.TC")}</span>
     </div>
     <div  

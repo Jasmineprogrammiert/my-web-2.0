@@ -1,20 +1,18 @@
 {
   "arrow": "retour",
   "titles": {
-    "title-1": "Je suis une <1>Dévelop- <br /> peuse Full Stack</1> & <1>Étudiante en Marketing</1>.",
-    "title-2": "J'aime aussi les langues, <br /> la randonnée et l'histoire."
+    "title-1": "Je suis une <1>Ingénieure Logicielle</1> & <1>Étudiante <br /> en Marketing</1>",
+    "title-2": "J'aime aussi les langues, la randonnée et l'histoire"
   },
   "links": {
-    "link-1": "> Résumé",
-    "link-1-copy": "141ko pdf",
-    "link-2": "> Blog"
+    "link-1": "> CV",
+    "link-1-copy": "525ko pdf"
   },
   "about": {
     "about-me": "À propos de moi",
-    "about-1": "Bonjour, je m’appelle <i><strong>Jasmin Zeng</strong></i>. Je suis une développeuse Web Full Stack et une étudiante en marketing basé à Hong-Kong, passionnée par l’apprentissage des langues, la randonnée et l’histoire.",
-    "about-2": "J’ai fait une randonnée seule sur la section 2 du MacLehose Trail lors d’une visite à Hong Kong en 2018. La beauté de la nature m’a complètement captivé, ce qui, entre autres facteurs, a conduit à la décision de poursuivre le diplôme universitaire à HK.",
-    "about-3": "Ma croyance dans le développement personnel motive mon engagement sur l’apprentissage continu, afin que je puisse contribuer de manière significative à la société. Le marketing enseigne exactement comment en identifiant les besoins des gens et en apportant de la valeur par un travail inspirant et l’utilisation des technologies. Et la joie des réalisations est non négligeable. J’ai donc choisi de me spécialiser en marketing.",
-    "about-4": "Je suis devenue une randonneuse passionnée après avoir déménagé à HK. Mes randonnées m’ont fourni de nombreuses belles photos et expérience qui j’aimerais partager. Au départ, je les ai publiés sur Instagram, mais la limite de mots a rendu difficile la création d’un seul article, ce qui a suscité l’idée audacieuse de coder mon propre blog de randonnée. Bien que je n’aie aucune formation en technologie, je crois que tout est possible avec de l’action, de la constance et de la persévérance.  Je me suis lancée dans le développement Web au début de 2022, et ce fut l’une des meilleures décisions que j’ai jamais prises.",
-    "about-5": "C’est ma curiosité infinie pour le monde qui me pousse à explorer différents domaines. Mes intérêts incluent également les voyages, la photographie, le piano et bien d’autres choses. Vous trouverez plus d’informations sur mes compétences, mon expérience et ma formation sur mon CV et mon blog."
+    "about-1": "Bonjour, je m’appelle <i><strong>Jasmin Zeng</strong></i>. Je suis une ingénieure logicielle et une étudiante en marketing basé à Hong Kong. Avec une curiosité insatiable et un esprit indépendant, je crois que tout est possible avec de l'action, de la constance et de la persévérance. Par conséquent, je ne me limite jamais à un rôle défini et reste toujours ouvert aux nouvelles idées et aux nouveaux défis.",
+    "about-2": "Mon parcours en génie logiciel a commencé avec l'objectif de créer un blog de randonnée. En raison de ma frustration avec les créateurs de sites Web, je me suis engagé dans un bootcamp de codage immersif pour créer le blog à partir de zéro. De façon inattendue, ma passion pour elle s'est enflammée au point que j'ai voulu en faire mon métier. Mettant l'accent sur le développement personnel, l'apprentissage continu et un esprit résilient, je crois que le génie logiciel est la solution idéale pour moi.",
+    "about-3": "Parmi mes autres passions, j'aime surtout apprendre les langues et faire de la randonnée. La langue agit comme un pont qui me relie profondément aux gens et à leurs cultures. Je parle couramment le mandarin, l'anglais et le cantonais et j'ai acquis l'allemand et le français à un niveau conversationnel pendant la quarantaine. En tant que randonneuse passionnée qui aime partager ses expériences, ma photo a été présentée dans les nouvelles locales après avoir remporté le prix d'argent dans un concours où les randonneurs et randonneuses ont été invités à créer une carte des sentiers pour la communauté.",
+    "about-4": "Je suis actuellement à la recherche d'un poste d'ingénieure logicielle à temps plein. Si vous m'engagez, vous aurez une joueuse d'équipe avec de solides compétences en résolution de problèmes, un esprit résilient et un état d'esprit ouvert. Vous trouverez plus d'informations sur mes compétences et mes expériences sur mon CV."
   }
 }
