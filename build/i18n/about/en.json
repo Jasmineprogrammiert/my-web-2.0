@@ -1,20 +1,18 @@
 {
   "arrow": "back",
   "titles": {
-    "title-1": "I'm a <1>Full-Stack <br /> Web Developer <br /></1> & <1>Marketing Undergrad</1>.",
-    "title-2": "I also love languages, hiking & history."
+    "title-1": "I'm a <1>Software Engineer <br /></1> & <1>Marketing Undergrad</1>",
+    "title-2": "I also love languages, hiking, history & traveling"
   },
   "links": {
     "link-1": "> Résumé",
-    "link-1-copy": "141kb pdf",
-    "link-2": "> Blog"
+    "link-1-copy": "525kb pdf"
   },
   "about": {
     "about-me": "About me",
-    "about-1": "Hello, my name is <i><strong>Jasmine Zeng</strong></i>. I'm a Hong-Kong-based full-stack web developer and marketing undergrad with a passion for language learning, hiking and history.",
-    "about-2": "I had a solo hike at the MacLehose Trail Section 2 while visiting Hong Kong in 2018. The beauty of the nature there fully captivated me, which among other factors led to the decision to pursue a higher education in HK.",
-    "about-3": "My belief in personal development drives my commitment to continual learning, so that I can contribute in a meaningful way to society. Marketing teaches exactly how by identifying people's needs and providing value through inspirational work and the use of technologies. And the joy of accomplishments is unneglectable. Therefore, I chose to major in marketing.",
-    "about-4": "I've become an avid hiker upon moving to HK. My hikes have provided me with many beautiful photos and experiences that I'd like to share. Originally, I posted them on Instagram, but the word limit made it difficult to put one post together, which sparked a bold idea to code my own hiking blog. Although I had no background in technology, I believe that anything is possible with action, consistency, and perseverance. I dived into web development in early 2022, and it was one of the best decisions I've ever made.",
-    "about-5": "It is my endless curiosity about the world that drives me to explore different fields. My interests also include traveling, photography, playing the piano and many other stuffs. More about my skills, experience and education can be found on my résumé and blog."
+    "about-1": "Hello, my name is <i><strong>Jasmine Zeng</strong></i>. I'm a software engineer and marketing undergrad based in Hong Kong. With a restless curiosity and an independent mind, I believe that anything is possible with action, consistency, and perseverance. Therefore, I never confine myself to a set role and always stay open to new ideas and challenges.",
+    "about-2": "My journey in software engineering started with the goal of creating a hiking blog. As a result of my frustration with website builders, I committed myself to an immersive coding bootcamp to build the blog from scratch. Unexpectedly, my passion for it was ignited to the point that I wanted to make it my career. Having an emphasis on personal development, continuous learning, and a resilient mind, I believe that software engineering is the perfect fit for me.",
+    "about-3": "Among my other passions, I enjoy learning languages and hiking the most. Language acts like a bridge which connects me to people and their cultures deeply. I am a fluent speaker of Mandarin, English and Cantonese and I acquired German and French to a conversational level during quarantine. As an avid hiker who enjoys sharing their experiences, my photograph was featured in local news after winning silver prize in a contest where hikers were invited to create a trail map for the community.",
+    "about-4": "I’m currently seeking a full-time software engineer position. If you hire me, you’ll have a team player with strong problem-solving skills, a resilient spirit, and an open mindset. More about my skills and experiences can be found on my résumé."
   }
 }

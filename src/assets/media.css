@@ -11,9 +11,6 @@
     font-size: 16vw;
     left: -2%;
   }
-  .hero-text span:hover {
-    text-indent: 0.3em;
-  }
   .menu-1 {
     /* top -2 ~ 92 */
     top: 22%;
@@ -21,12 +18,10 @@
   }
   .menu-2 {
     top: 43.5%;
-    /* width: 60%; */
     width: 80%;
   }
   .menu-3 {
     top: 65%;
-    /* width: 58%; */
     width: 75%;
   }
   .lang {
@@ -34,6 +29,9 @@
     left: 81%;
     width: 15vw;
     text-align: left;
+  }
+  .lang span:hover {
+    text-indent: .15em;
   }
   .menu-en {
     top: 10%;

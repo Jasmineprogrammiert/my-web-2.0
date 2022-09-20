@@ -62,15 +62,15 @@ code {
 }
 .hero-text span:hover {
   color: yellow;
-  text-indent: 0.5em;
-  letter-spacing: 0.2vw;
+  text-indent: .5em;
+  letter-spacing: .2vw;
   text-transform: uppercase;
   transition: .5s ease-out;
 }
 .slideUp > span {
   display: block;
   text-align: left;
-  animation: slideUp .5s cubic-bezier(0.2, 0.6, 0.2, 1);
+  animation: slideUp .5s cubic-bezier(.2, .6, .2, 1);
   animation-fill-mode: backwards;
 }
 .menu-1 > span {
@@ -180,8 +180,8 @@ code {
 }
 .arrow-back span:hover {
   color: yellow;
-  text-indent: 0.1em;
-  letter-spacing: 0.1vw;
+  text-indent: .1em;
+  letter-spacing: .1vw;
   text-transform: uppercase;
   transition: .5s ease-out;
 }
@@ -233,8 +233,8 @@ code {
 }
 .links span:hover {
   color: yellow;
-  text-indent: 0.1em;
-  letter-spacing: 0.1vw;
+  text-indent: .1em;
+  letter-spacing: .1vw;
   transition: .5s ease-out;
 }
 /* ---------- Contact ---------- */

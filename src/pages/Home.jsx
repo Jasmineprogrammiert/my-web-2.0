@@ -22,9 +22,11 @@ const Navigationbar = () => {
   const [isOriginal, setIsOriginal] = useState(true);
 
   const handleHeadings = () => {
-    setHeading(`${t("nav.aboutMe")}`);
-    setHeading1(`${t("nav.myBlog")}`);
-    setHeading2(`${t("nav.contact")}`);
+    setTimeout(() => {
+      setHeading(`${t("nav.aboutMe")}`);
+      setHeading1(`${t("nav.myBlog")}`);
+      setHeading2(`${t("nav.contact")}`);
+    }, 200)
   }
   const handleMobileHeadings1 = () => {
     setHeading(updatedHeading);
@@ -44,7 +46,7 @@ const Navigationbar = () => {
     <div href="top" className="bg-img" />
     <Link 
       to="/about" 
-      className={`hero-text slideUp menu-1`}
+      className="hero-text slideUp menu-1"
     >
       <span
          onMouseOver={() => setHeading(updatedHeading)}
@@ -57,7 +59,7 @@ const Navigationbar = () => {
       href="https://deinelieblingsjasmin.com" 
       target="_blank" 
       rel="noreferrer" 
-      className={`hero-text slideUp menu-2`}
+      className="hero-text slideUp menu-2"
     >
       <span
          onMouseOver={() => setHeading1(updatedHeading1)}
@@ -68,7 +70,7 @@ const Navigationbar = () => {
     </Nav.Link>
     <Link 
       to="/work" 
-      className={`hero-text slideUp menu-3`}
+      className="hero-text slideUp menu-3"
     >
       <span
         onMouseOver={() => setHeading2(updatedHeading2)}
@@ -78,56 +80,46 @@ const Navigationbar = () => {
       </span>
     </Link> 
     <div
-      className={`hero-text menu-en lang`}
+      className="hero-text menu-en lang"
       onClick={e => {
         handleLangChange(e);
-        setTimeout(() => {
-          handleHeadings();
-        }, 100);
+        handleHeadings();
       }}
     >
       <span id="en">{t("lang.EN")}</span>
     </div>
     <div
-      className={`hero-text menu-de lang`}
+      className="hero-text menu-de lang"
       onClick={e => {
         handleLangChange(e);
-        setTimeout(() => {
-          handleHeadings();
-        }, 100);
+        handleHeadings();
       }}
     >
      <span id="de">{t("lang.DE")}</span>
     </div>
     <div
-      className={`hero-text menu-fr lang`}
+      className="hero-text menu-fr lang"
       onClick={e => {
         handleLangChange(e);
-        setTimeout(() => {
-          handleHeadings();
-        }, 100);
+        handleHeadings();
       }}
     >
       <span id="fr">{t("lang.FR")}</span>
     </div>
     <div 
-      className={`hero-text menu-sc lang`}
+      className="hero-text menu-sc lang"
       onClick={e => {
         handleLangChange(e);
-        setTimeout(() => {
-          handleHeadings();
-        }, 100);
+        handleHeadings();
       }}
     >
       <span id="sc">{t("lang.SC")}</span>
     </div>
     <div  
-      className={`hero-text menu-tc lang`}
+      className="hero-text menu-tc lang"
       onClick={e => {
         handleLangChange(e);
-        setTimeout(() => {
-          handleHeadings();
-        }, 100);
+        handleHeadings();
       }}
     >
       <span id="tc">{t("lang.TC")}</span>
