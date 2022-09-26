@@ -3,7 +3,7 @@
 https://jasminezeng.com
 
 ### VS Code
-cd to client, runs `yarn start` && ... server, runs `nodemon run. \
+cd to client, runs `yarn start` && ... server, runs `nodemon run`. \
 Frontend and backend run at http://localhost:1208 and http://localhost:8000, respectively.
 
 The page will reload when you make changes.\
