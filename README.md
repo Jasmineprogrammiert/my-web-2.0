@@ -3,8 +3,8 @@
 https://jasminezeng.com
 
 ### VS Code
-cd to client, runs `yarn start` && ... server, runs `nodemon run`.
-Frontend and backend run at http://localhost:1208 and http://localhost:8000, respectively.
+cd to project folder, run `yarn install` in the Terminal.
+Then runs `yarn start`, http://localhost:1208 will be launched.
 
 The page will reload when you make changes.
 You may also see any lint errors in the console.
