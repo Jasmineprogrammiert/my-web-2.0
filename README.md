@@ -2,18 +2,17 @@
 
 https://jasminezeng.com
 
-### `yarn start`
+### VS Code
+cd to project folder, run `yarn install` in the Terminal.
+Then runs `yarn start`, http://localhost:1208 will be launched.
 
-Runs the app in the development mode.\
-Open [http://localhost:1208] to view it in your browser.
-
-The page will reload when you make changes.\
+The page will reload when you make changes.
 You may also see any lint errors in the console.
 
-### `yarn build`
+### Update
 
-Builds the app for production to the `build` folder.\
+Run `yarn build` to build the app for production to the `build` folder.
 It correctly bundles React in production mode and optimizes the build for the best performance.
+The build is minified and the filenames include the hashes.
 
-The build is minified and the filenames include the hashes.\
-Go to AWS, update S3 bucket and invalidate CloudFront cache
+Then Go to AWS, update S3 bucket and invalidate CloudFront cache.
