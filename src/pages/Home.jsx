@@ -26,7 +26,7 @@ const Navigationbar = () => {
       setHeading(`${t("nav.aboutMe")}`);
       setHeading1(`${t("nav.myBlog")}`);
       setHeading2(`${t("nav.contact")}`);
-    }, 200)
+    }, 250)
   }
   const handleMobileHeadings1 = () => {
     setHeading(updatedHeading);
@@ -56,7 +56,7 @@ const Navigationbar = () => {
       </span>
     </Link> 
     <Nav.Link 
-      href="https://deinelieblingsjasmin.com" 
+      href="https://lieblingsjasmin.com/blog" 
       target="_blank" 
       rel="noreferrer" 
       className="hero-text slideUp menu-2"
