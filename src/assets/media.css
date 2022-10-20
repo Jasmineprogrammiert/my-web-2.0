@@ -1,4 +1,4 @@
-@media (orientation: portrait) and (max-width: 540px) {
+@media (orientation: portrait) and (max-width: 430px) {
   /* ---------- Universal ---------- */
   p {
     font-size: 4.3vw;
@@ -10,6 +10,10 @@
   .hero-text {
     font-size: 16vw;
     left: -2%;
+  }
+  .hero-text span:hover {
+    text-indent: 0;
+    letter-spacing: 0;
   }
   .menu-1 {
     /* top -2 ~ 92 */

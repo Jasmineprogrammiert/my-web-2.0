@@ -7,7 +7,6 @@ import Nav from 'react-bootstrap/Nav';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 // local files
 import jasmine from '../assets/img/jasmine-01.png';
-import résumé from '../assets/files/Jasmine_ZENG_CV.pdf'
 import Contact from '../components/Contact';
 
 const About = () => {
@@ -27,14 +26,7 @@ const About = () => {
       delay: 300,
       duration: 1800
     });
-    window.addEventListener('load', function() {
-      AOS.refresh();
-    });
-    window.addEventListener('DOMContentLoaded', function() {
-      setTimeout(function() { 
-        AOS.refresh(); 
-      }, 500);
-    });
+    window.addEventListener('load', AOS.refresh);
   });
 
   return (
@@ -79,10 +71,11 @@ const About = () => {
         <p>{t("about.about-3")}</p>
         <p>{t("about.about-4")}</p>
         <Nav.Link 
-          href={résumé} 
+          href={'/files/Jasmine_ZENG_CV.pdf'} 
           target="_blank" 
           rel="noreferrer"
-          className="links">
+          className="links"
+        >
           <span
             onMouseOver={() => setLink(updatedLink)}
             onMouseLeave={() => setLink(originalLink)}
