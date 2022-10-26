@@ -187,18 +187,18 @@ code {
 }
 .titles {
   position: absolute;
-  left: 14%;
+  left: 11%;
 }
 .titles > span {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 6.5vw;
+  font-size: 7vw;
   font-weight: bold;
 }
 .menu-4 {
-  top: 24%;
+  top: 28%;
 }
 .menu-5 {
-  top: 67%;
+  top: 62%;
 }
 .menu-5 > span {
   animation-delay: 500ms;

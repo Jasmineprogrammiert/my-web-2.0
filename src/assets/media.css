@@ -86,11 +86,13 @@
     font-size: 11.6vw;
   }
   .menu-4 {
-    top: 23%;
+    top: 25%;
+    width: 95%;
   }
   .menu-5 {
-    top: 65%;
+    top: 52%;
     margin-top: 6vh;
+    width: 95%;
   }
   .menu-5 > span {
     font-size: 9vw;
