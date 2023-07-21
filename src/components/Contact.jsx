@@ -14,7 +14,7 @@ const Contact = () => {
     <a href="mailto:jasminezeng08@gmail.com" id="email-me">
       <EmailIcon id="icons" />
     </a> 
-    <a href="https://www.linkedin.com/in/jasminzeng/" target="_blank">
+    <a href="https://www.linkedin.com/in/jasminzeng" target="_blank">
       <LinkedInIcon id="icons" />
     </a>
     <a href="https://github.com/Jasmineprogrammiert" target="_blank">
