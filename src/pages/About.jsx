@@ -71,7 +71,7 @@ const About = () => {
         <p>{t("about.about-3")}</p>
         <p>{t("about.about-4")}</p>
         <Nav.Link 
-          href={'/files/Jasmine_ZENG_CV.pdf'} 
+          href={'/files/Jasmine_ZENG_Résumé.pdf'} 
           target="_blank" 
           rel="noreferrer"
           className="links"
